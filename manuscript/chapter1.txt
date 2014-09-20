@@ -9,10 +9,8 @@ Creating sample tables and inserting values.
 
  
 
-Create the following tables with the given structures and insert sample data as specified: - 
-
+##Create the following tables with the given structures and insert sample data as specified: - 
  
-
 A) SALESPEOPLE 
 
 Snum number(4) 
@@ -105,9 +103,6 @@ snum number(4)
 ); 
 
  
-
- 
-
 SALES PEOPLE 
 
 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -241,7 +236,7 @@ VALUES(3011,9891.88,’06- OCT -1990’,2006,1001);
 
 #Assignment –2 
 
-Introducing Relational Databases. 
+##Introducing Relational Databases. 
 
  
 
@@ -275,7 +270,7 @@ Ans :- Because tuples don’t have orders.
 
 #Assignment –3 
 
-Overview of SQL. 
+##Overview of SQL. 
 
  
 
@@ -458,7 +453,7 @@ SNUM 	ONUM
 
 #Assignment –5 
 
-Relational and Logical Operators. 
+##Relational and Logical Operators. 
 
  
 
@@ -588,8 +583,6 @@ ONUM 	 	AMT 	 		ODATE 	 			CNUM 	 	SNUM
 
  
 
- 
-
 Display all tauple from order except date is 03-oct 1990 with cnum >2003 or orders 
 where amt is less then 1000 or 
 
@@ -601,8 +594,6 @@ with cnum>2003.
 5) What will be the output of the following query? 
 
 
- 
-
  SQL> Select * 
 
  from Orders 
@@ -610,9 +601,6 @@ with cnum>2003.
  where NOT 
 
  ((odate = ‘03-OCT-1990’ OR snum>1006) AND amt >= 1500); 
-
- 
-
  
 
 ONUM 	 	AMT 	 		ODATE 	 			CNUM 	 	SNUM 
