@@ -1,9 +1,7 @@
 # Chapter 1
 
-
 ----------------------Sql Assignments--------------------- 
 
- 
 
 Assignment –1 
 
@@ -19,11 +17,11 @@ A) SALESPEOPLE
 
 Snum number(4) 
 
- Sname varchar2(10) 
+Sname varchar2(10) 
 
- City varchar2(10) 
+city varchar2(10) 
 
- Comm number(3,2) 
+Comm number(3,2) 
 
 Answer: 
 
@@ -45,15 +43,15 @@ comm number(3,2)
 
 B) CUSTOMERS 
 
- Cnum number(4) 
+Cnum number(4) 
 
- Cname varchar2(10) 
+Cname varchar2(10) 
 
- City varchar2(10) 
+City varchar2(10) 
 
- Rating number(4) 
+Rating number(4) 
 
- Snum number(4) 
+Snum number(4) 
 
  
 
@@ -75,17 +73,18 @@ snum number(4)
 
 ); 
 
+
 C) ORDERS 
 
- Onum number(4) 
+Onum number(4) 
 
- Amt number(7,2) 
+Amt number(7,2) 
 
- Odate date 
+Odate date 
 
- Cnum number(4) 
+Cnum number(4) 
 
- Snum number(4) 
+Snum number(4) 
 
 Answer: 
 
@@ -93,14 +92,13 @@ Create table orders
 
 ( 
 
-
 onum number(4), 
 
- amt number(7,2), 
+amt number(7,2), 
 
- odate date, 
+odate date, 
 
- cnum number(4), 
+cnum number(4), 
 
 snum number(4) 
 
@@ -112,276 +110,63 @@ snum number(4)
 
 SALES PEOPLE 
 
-SNUM 
+SNUM 	SNAME 	CITY 		COMM 
 
-SNAME 
+1001 	Peel 	London 		.12 
 
-CITY 
+1002 	Serres 	San Jose 	.13 
 
-COMM 
+1004	Motika 	London 		.11 
 
-1001 
+1007 	Rifkin 	Barcelona 	.15 
 
-Peel 
-
-London 
-
-.12 
-
-1002 
-
-Serres 
-
-San Jose 
-
-.13 
-
-1004 
-
-Motika 
-
-London 
-
-.11 
-
-1007 
-
-Rifkin 
-
-Barcelona 
-
-.15 
-
-1003 
-
-Axelrod 
-
-New York 
-
-.10 
-
-
+1003 	Axelrod New York 	.10 
 
  
 
 Insert into salespeople values(&snum,’&name’,’&city’,&comm); 
 
- CUSTOMERS 
 
- 
+CUSTOMERS 
 
-CNUM 
+CNUM CNAME CITY RATING SNUM 
 
-CNAME 
+2001 Hoffman London 100 1001 
 
-CITY 
+2002 Giovanni Rome 200 1003 
 
-RATING 
+2003 Liu San Jose 200 1002 
 
-SNUM 
+2004 Grass Berlin 300 1002 
 
-2001 
+2006 Clemens London 100 1001 
 
-Hoffman 
+2008 Cisneros San Jose 300 1007 
 
-London 
-
-100 
-
-1001 
-
-2002 
-
-Giovanni 
-
-Rome 
-
-200 
-
-1003 
-
-2003 
-
-Liu 
-
-San Jose 
-
-200 
-
-1002 
-
-2004 
-
-Grass 
-
-Berlin 
-
-300 
-
-1002 
-
-2006 
-
-Clemens 
-
-London 
-
-100 
-
-1001 
-
-2008 
-
-Cisneros 
-
-San Jose 
-
-300 
-
-1007 
-
-2007 
-
-Pereira 
-
-Rome 
-
-100 
-
-1004 
+2007 Pereira Rome 100 1004 
 
 
 
- ORDERS 
+ORDERS 
 
 Insert into customers values(&cnum,’&cname’,’&city’,&rating,&snum); 
 
- 
-
-ONUM 
-
-AMT 
-
-ODATE 
-
-CNUM 
-
-SNUM 
-
-3001 
-
-18.69 
-
-03-OCT-1990 
-
-2008 
-
-1007 
-
-3003 
-
-767.19 
-
-03- OCT -1990 
-
-2001 
-
-1001 
-
-3002 
-
-1900.10 
-
-03- OCT -1990 
-
-2007 
-
-1004 
-
-3005 
-
-5160.45 
-
-03- OCT -1990 
-
-2003 
-
-1002 
-
-3006 
-
-1098.16 
-
-03- OCT -1990 
-
-2008 
-
-1007 
-
-3009 
-
-1713.23 
-
-04- OCT -1990 
-
-2002 
-
-1003 
-
-3007 
-
-75.75 
-
-04- OCT -1990 
-
-2004 
-
-1002 
-
-3008 
-
-4723.00 
-
-05- OCT -1990 
-
-2006 
-
-1001 
-
-3010 
-
-1309.95 
-
-06- OCT -1990 
-
-2004 
-
-1002 
-
-3011 
-
-9891.88 
-
-06- OCT -1990 
-
-2006 
-
-1001 
+ONUM 	AMT 		ODATE		CNUM SNUM 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+3001 	18.69 		03- OCT -1990 	2008 1007 
+3003 	767.19 		03- OCT -1990 	2001 1001 
+3002 	1900.10 	03- OCT -1990 	2007 1004 
+	3005 5160.45 	03- OCT -1990 	2003 1002 
+3006 	1098.16 	03- OCT -1990 	2008 1007 
+3009 	1713.23 	04- OCT -1990 	2002 1003 
+3007 	75.75 		04- OCT -1990 	2004 1002 
+3008 	4723.00 	05- OCT -1990 	2006 1001 
+3010 	1309.95 	06- OCT -1990 	2004 1002 
+3011 	9891.88 	06- OCT -1990 	2006 1001 
 
 
-
- 
 
 Insert into orders values(&onum,&amt,’&odate’,&cnum,&snum); 
-
- 
-
- 
-
-
- 
-
- 
 
 ONUM AMT ODATE CNUM SNUM 
 
@@ -445,33 +230,9 @@ INSERT INTO ORDERS
 
 VALUES(3011,9891.88,’06- OCT -1990’,2006,1001); 
 
- 
 
- 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment –2 
 
 Introducing Relational Databases. 
@@ -504,71 +265,8 @@ Ans:- duple or record
 
 Ans :- Because tuples don’t have orders. 
 
- 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment –3 
 
 Overview of SQL. 
@@ -587,83 +285,8 @@ Ans :- Yes.
 
 Ans :- insert into values 
 
- 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment –4 
 
 Retrieving Information from Tables. 
@@ -675,36 +298,35 @@ rows in the Orders table.
 
 
  
-
 SQL>select onum, amt, odate 
 
  from orders; 
 
  
 
- UM AMT ODATE 
+UM	AMT		ODATE 
 
----------- ---------- --------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 3001 18.69 03-OCT-90 
+3001 	18.69 		03-OCT-90 
 
- 3003 767.19 03-OCT-90 
+3003 	767.19 		03-OCT-90 
 
- 3002 1900.1 03-OCT-90 
+3002 	1900.1 		03-OCT-90 
 
- 3005 5160.45 03-OCT-90 
+3005 	5160.45 	03-OCT-90 
 
- 3006 1098.16 03-OCT-90 
+3006 	1098.16 	03-OCT-90 
 
- 3009 1713.23 04-OCT-90 
+3009 	1713.23 	04-OCT-90 
 
- 3007 75.75 04-OCT-90 
+3007 	75.75 		04-OCT-90 
 
- 3008 4723 05-OCT-90 
+3008 	4723 		05-OCT-90 
 
- 3010 1309.95 06-OCT-90 
+3010 	1309.95 	06-OCT-90 
 
- 3011 9891.88 06-OCT-90 
+3011 	9891.88 	06-OCT-90 
 
  
 
@@ -724,13 +346,13 @@ from customers where snum=1001;
 
  
 
- CNUM CNAME CITY RATING SNUM 
+CNUM	CNAME	CITY	RATING 	SNUM
 
----------- ---------- ---------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 2001 hoffman london 100 1001 
+2001 	hoffman	london 	100 	1001 
 
- 2006 clemens london 100 1001 
+2006 	clemens	london 	100 	1001 
 
  
 
@@ -746,20 +368,21 @@ SQL> Select city, sname, snum, comm.
 
  
 
-CITY SNAME SNUM COMM 
+CITY		SNAME	SNUM	COMM 
 
----------- ---------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-london peel 1001 .12 
+london 		peel 	1001 	.12 
 
-san jose serres 1002 .13 
+san jose 	serres	1002 	.13 
 
-london Motika 1004 .11 
+newyork 	axelrod 1003 	.1 
 
-
-barcelona rifkin 1007 .15 
+london 		Motika 	1004 	.11 
 
-newyork axelrod 1003 .1 
+barcelona 	rifkin 	1007 	.15 
+
+
 
  
 
@@ -777,11 +400,10 @@ SQL> Select rating||' '||cname "employee rating"
 
  
 
-employee rating 
+employee 	rating 
 
---------------------------------------------------- 
-
-300 cisneros 
+<<<<<<<<<<<<<<<<<<<<<<<<
+300		cisneros 
 
  
 
@@ -801,7 +423,7 @@ order by snum;
 
  SNUM ONUM 
 
----------- ---------- 
+<<<<<<<<<<<
 
  1002 3007 
 
@@ -827,29 +449,6 @@ order by snum;
 
 10 rows selected. 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment –5 
 
 Relational and Logical Operators. 
@@ -867,23 +466,22 @@ from orders where amt>1000;
 
  
 
- ONUM AMT ODATE CNUM SNUM 
+ONUM 	AMT		ODATE		CNUM	SNUM 
 
----------- ---------- --------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+3002 	1900.1 		03-OCT-90 	2007 	1004 
 
- 3002 1900.1 03-OCT-90 2007 1004 
+3005 	5160.45 	03-OCT-90 	2003 	1002 
 
- 3005 5160.45 03-OCT-90 2003 1002 
+3006 	1098.16 	03-OCT-90 	2008 	1007 
 
- 3006 1098.16 03-OCT-90 2008 1007 
+3009 	1713.23 	04-OCT-90 	2002 	1003 
 
- 3009 1713.23 04-OCT-90 2002 1003 
+3008 	4723 		05-OCT-90 	2006 	1001 
 
- 3008 4723 05-OCT-90 2006 1001 
+3010 	1309.95 	06-OCT-90 	2004 	1002 
 
- 3010 1309.95 06-OCT-90 2004 1002 
-
- 3011 9891.88 06-OCT-90 2006 1001 
+3011 	9891.88 	06-OCT-90 	2006	1001 
 
  
 
@@ -905,13 +503,12 @@ where city='London' AND comm >.10;
 
  
 
-SNAME CITY 
+SNAME 	CITY 
 
----------- ---------- 
+<<<<<<<<<<<<<<<
+peel 	London 
 
-peel London 
-
-Motika London 
+Motika 	London 
 
  
 
@@ -929,21 +526,19 @@ SQL> Select *
 
  
 
- CNUM CNAME CITY RATING SNUM 
+CNUM	CNAME		CITY		RATING	SNUM 
 
----------- ---------- ---------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+2002 	Giovanni 	Rome 		200 	1003 
 
- 2002 Giovanni Rome 200 1003 
+2003 	Liu 		San Jose 	200 	1002 
 
- 2003 Liu San Jose 200 1002 
+2004 	Grass 		Berlin 		300 	1002 
 
- 2004 Grass Berlin 300 1002 
+2008 	Cisneros 	San Jose 	300 	1007 
 
- 2008 Cisneros San Jose 300 1007 
+2007 	Pereira 	Rome 		100 	1004 
 
- 2007 Pereira Rome 100 1004 
-
-
  
 
 4) What will be the output from the following query? 
@@ -951,7 +546,7 @@ SQL> Select *
 
  
 
- SQL> Select * 
+SQL> Select * 
 
 from Orders 
 
@@ -961,25 +556,25 @@ from Orders
 
  
 
- ONUM AMT ODATE CNUM SNUM 
+ONUM 	AMT 		ODATE 		CNUM 	SNUM 
 
----------- ---------- --------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 3001 18.69 03-OCT-90 2008 1007 
+3001 	18.69 		03-OCT-90 	2008 	1007 
 
- 3003 767.19 03-OCT-90 2001 1001 
+3003 	767.19 		03-OCT-90 	2001 	1001 
 
- 3005 5160.45 03-OCT-90 2003 1002 
+3005 	5160.45 	03-OCT-90 	2003 	1002 
 
- 3009 1713.23 04-OCT-90 2002 1003 
+3009 	1713.23 	04-OCT-90 	2002 	1003 
 
- 3007 75.75 04-OCT-90 2004 1002 
+3007 	75.75 		04-OCT-90 	2004 	1002 
 
- 3008 4723 05-OCT-90 2006 1001 
+3008 	4723 		05-OCT-90 	2006 	1001 
 
- 3010 1309.95 06-OCT-90 2004 1002 
+3010 	1309.95 	06-OCT-90 	2004 	1002 
 
- 3011 9891.88 06-OCT-90 2006 1001 
+3011 	9891.88 	06-OCT-90 	2006 	1001 
 
  
 
@@ -1010,39 +605,31 @@ with cnum>2003.
 
  
 
- ONUM AMT ODATE CNUM SNUM 
+ONUM 	AMT 		ODATE 		CNUM 	SNUM 
 
----------- ---------- --------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+3001 	18.69 		03-OCT-90	2008 	1007 
 
- 3001 18.69 03-OCT-90 2008 1007 
+3003 	767.19 		03-OCT-90 	2001 	1001 
 
- 3003 767.19 03-OCT-90 2001 1001 
+3006 	1098.16 	03-OCT-90 	2008 	1007 
 
- 3006 1098.16 03-OCT-90 2008 1007 
+3009 	1713.23		04-OCT-90 	2002 	1003 
 
- 3009 1713.23 04-OCT-90 2002 1003 
+3007 	75.75 		04-OCT-90 	2004 	1002 
 
- 3007 75.75 04-OCT-90 2004 1002 
+3008 	4723 		05-OCT-90 	2006 	1001 
 
- 3008 4723 05-OCT-90 2006 1001 
+3010 	1309.95 	06-OCT-90 	2004 	1002 
 
- 3010 1309.95 06-OCT-90 2004 1002 
+3011 	9891.88 	06-OCT-90 	2006 	1001 
 
- 3011 9891.88 06-OCT-90 2006 1001 
 
- 
 
- 
-
- 
-
-
 6) What is a simpler way to write this query? 
 
 
- 
-
- SQL> Select snum, sname, city, comm 
+SQL> Select snum, sname, city, comm 
 
 From Salespeople 
 
@@ -1058,79 +645,14 @@ where comm =.13;
 
  
 
- SNUM SNAME CITY COMM 
+SNUM 	SNAME 	CITY 		COMM 
 
----------- ---------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 1002 Serres San Jose .13 
+1002 	Serres 	San Jose 	.13 
 
- 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment –6 
 
 Using Special Operators in Conditions. 
@@ -1149,24 +671,23 @@ from orders
 
  
 
- ONUM AMT ODATE CNUM SNUM 
+ONUM 	AMT 		ODATE	CNUM	SNUM 
 
----------- ---------- --------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 3001 18.69 03-OCT-90 2008 1007 
+3001 	18.69 		03-OCT-90 	2008 	1007 
 
- 3003 767.19 03-OCT-90 2001 1001 
+3003 	767.19 		03-OCT-90 	2001 	1001 
 
- 3002 1900.1 03-OCT-90 2007 1004 
+3002 	1900.1 		03-OCT-90 	2007 	1004 	
 
- 3005 5160.45 03-OCT-90 2003 1002 
+3005 	5160.45 	03-OCT-90 	2003 	1002 
 
- 3006 1098.16 03-OCT-90 2008 1007 
+3006 	1098.16 	03-OCT-90 	2008 	1007 
 
- 3009 1713.23 04-OCT-90 2002 1003 
+3009 	1713.23 	04-OCT-90 	2002 	1003 
 
- 3007 75.75 04-OCT-90 2004 1002 
-
+3007 	75.75 		04-OCT-90 	2004 	1002 
  
 
 7 rows selected. 
@@ -1187,23 +708,23 @@ where odate between '03-oct-1990' and '04-oct-1990';
 
  
 
- ONUM AMT ODATE CNUM SNUM 
+ONUM 	AMT 		ODATE 		CNUM 	SNUM 
 
----------- ---------- --------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 3001 18.69 03-OCT-90 2008 1007 
+3001 	18.69 		03-OCT-90 	2008 	1007 
 
- 3003 767.19 03-OCT-90 2001 1001 
+3003 	767.19 		03-OCT-90 	2001 	1001 
 
- 3002 1900.1 03-OCT-90 2007 1004 
+3002 	1900.1 		03-OCT-90 	2007 	1004 
+	
+3005	5160.45 	03-OCT-90 	2003 	1002 
 
- 3005 5160.45 03-OCT-90 2003 1002 
+3006 	1098.16 	03-OCT-90 	2008 	1007 
 
- 3006 1098.16 03-OCT-90 2008 1007 
+3009 	1713.23 	04-OCT-90 	2002 	1003 
 
- 3009 1713.23 04-OCT-90 2002 1003 
-
- 3007 75.75 04-OCT-90 2004 1002 
+3007 	75.75 		04-OCT-90 	2004 	1002 
 
  
 
@@ -1212,19 +733,7 @@ where odate between '03-oct-1990' and '04-oct-1990';
 
 (Hint: the snum field relates the two tables to one another). 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
-
 SQL> select * 
 
 from customers 
@@ -1237,15 +746,15 @@ where snum in
 
  
 
- CNUM CNAME CITY RATING SNUM 
+CNUM	CNAME		CITY		RATING	SNUM 
 
----------- ---------- ---------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 2006 Clemense London 100 1001 
+2006 	Clemense 	London 		100 	1001 
 
- 2001 Hoffman London 100 1001 
+2001 	Hoffman 	London 		100 	1001 
 
- 2008 Cisneros San Jose 300 1007 
+2008 	Cisneros 	San Jose 	300 	1007 
 
  
 
@@ -1266,17 +775,17 @@ SQL> select *
 
  
 
- CNUM CNAME CITY RATING SNUM 
+CNUM	CNAME		CITY		RATING	SNUM 
 
----------- ---------- ---------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 2002 Giovanni Rome 200 1003 
+2002 	Giovanni 	Rome 		200 	1003 
 
- 2004 Grass Berlin 300 1002 
+2004 	Grass 		Berlin 		300 	1002 
 
- 2006 Clemense London 100 1001 
+2006 	Clemense 	London 		100 	1001 
 
- 2008 Cisneros San Jose 300 1007 
+2008 	Cisneros 	San Jose 	300 	1007 
 
  
 
@@ -1296,11 +805,11 @@ where substr(cname,1,1) between 'A' and 'G';
 
  
 
- CNUM CNAME CITY RATING SNUM 
+CNUM 	CNAME		CITY	RATING 	SNUM 
 
----------- ---------- ---------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 2002 Giovanni Rome 200 1003 
+2002	Giovanni		Rome	200	1003 
 
  2004 Grass Berlin 300 1002 
 
@@ -1308,16 +817,7 @@ where substr(cname,1,1) between 'A' and 'G';
 
  2008 Cisneros San Jose 300 1007 
 
- 
 
- 
-
- 
-
- 
-
-
- 
 
 4) Write a query that selects all customers whose names begin with the letter ‘C’. 
 
@@ -1336,7 +836,7 @@ SQL> select *
 
  CNUM CNAME CITY RATING SNUM 
 
----------- ---------- ---------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
  2006 Clemense London 100 1001 
 
@@ -1362,7 +862,7 @@ where amt is not null;
 
  ONUM AMT ODATE CNUM SNUM 
 
----------- ---------- --------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
  3001 18.69 03-OCT-90 2008 1007 
 
@@ -1388,29 +888,8 @@ where amt is not null;
 
 10 rows selected. 
 
- 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment –7 
 
 Summarizing Data with Aggregate Functions. 
@@ -1430,7 +909,7 @@ where odate like '03-OCT-%';
 
 TOTAL_ORDER 
 
------------ 
+<<<<<<<<<<<
 
  5 
 
@@ -1454,7 +933,7 @@ SQL> select count(cname) empty_city
 
 EMPTY_CITY 
 
----------- 
+<<<<<<<<<<
 
  7 
 
@@ -1473,24 +952,23 @@ group by cnum;
 
  
 
- MIN(AMT) CNUM 
+MIN(AMT) 	CNUM 
 
----------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<
 
- 767.19 2001 
+767.19 		2001 
 
- 4723 2006 
+4723 		2006 
 
- 1900.1 2007 
+1900.1 		2007 
 
-
- 5160.45 2003 
+5160.45 	2003 
 
- 75.75 2004 
+75.75 		2004 
 
- 18.69 2008 
+18.69 		2008 
 
- 1713.23 2002 
+1713.23 	2002 
 
  
 
@@ -1502,8 +980,6 @@ group by cnum;
 begins with G. 
 
 
- 
-
 SQL> select * 
 
 from customers 
@@ -1512,13 +988,12 @@ where cname like 'G%' order by cname;
 
  
 
- CNUM CNAME CITY RATING SNUM 
+CNUM 	CNAME 		CITY 	RATING
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
----------- ---------- ---------- ---------- ---------- 
+2002 	Giovanni 	Rome 	200 	1003 
 
- 2002 Giovanni Rome 200 1003 
-
- 2004 Grass Berlin 300 1002 
+2004 	Grass 		Berlin 	300 	1002 
 
 2 rows selected. 
 
@@ -1533,7 +1008,7 @@ SQL> select max(rating) "highest rating"
 
 highest rating 
 
--------------- 
+<<<<<<<<<<<<<<
 
  300 
 
@@ -1554,12 +1029,11 @@ SQL> select count(odate)||' SALES PERSON REGISTREDDON'
 
 from orders group by odate; 
 
-
  
 
-TOTAL ODATE 
+TOTAL 				ODATE 
 
--------------------------------------------------------------------- --------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 2 SALES PERSON REGISTREDD ON 04-OCT-90 
 
@@ -1571,83 +1045,6 @@ TOTAL ODATE
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment –8 
 
 Formatting Query output. 
@@ -1665,29 +1062,29 @@ SQL> select onum,snum,amt,(amt*12)/100 commision
 
  
 
- ONUM SNUM AMT COMMISION 
+ONUM 	SNUM 	AMT 		COMMISION 
 
- ---------- ---------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 3001 1007 18.69 2.2428 
+3001 	1007 	18.69 		2.2428 
 
- 3003 1001 767.19 92.0628 
+3003 	1001	767.19 		92.0628 
 
- 3002 1004 1900.1 228.012 
+3002 	1004 	1900.1 		228.012 
 
- 3005 1002 5160.45 619.254 
+3005 	1002 	5160.45 	619.254 
 
- 3006 1007 1098.16 131.7792 
+3006 	1007 	1098.16 	131.7792 
 
- 3009 1003 1713.23 205.5876 
+3009 	1003 	1713.23 	205.5876 
 
- 3007 1002 75.75 9.09 
+3007 	1002 	75.75 		9.09 
 
- 3008 1001 4723 566.76 
+3008 	1001 	4723 		566.76 
 
- 3010 1002 1309.95 157.194 
+3010 	1002 	1309.95 	157.194 
 
- 3011 1001 9891.88 1187.0256 
+3011 	1001 	9891.88 	1187.0256 
 
  
 
@@ -1709,30 +1106,29 @@ SQL> select onum,snum,amt,(amt*12)/100 commision
 
  
 
- ONUM SNUM AMT COMMISION 
+ONUM 	SNUM 	AMT 		COMMISION 
 
----------- ---------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 3001 1007 18.69 2.2428 
+3001 	1007 	18.69 		2.2428 
 
- 3003 1001 767.19 92.0628 
+3003 	1001 	767.19 		92.0628 
 
- 3002 1004 1900.1 228.012 
+3002 	1004 	1900.1 		228.012 
 
- 3005 1002 5160.45 619.254 
+3005 	1002 	5160.45 	619.254 
 
- 3006 1007 1098.16 131.7792 
+3006 	1007 	1098.16 	131.7792 
 
- 3009 1003 1713.23 205.5876 
+3009 	1003 	1713.23 	205.5876 
 
- 3007 1002 75.75 9.09 
+3007 	1002 	75.75 		9.09 	
 
- 3008 1001 4723 566.76 
+3008 	1001 	4723 		566.76 
 
- 3010 1002 1309.95 157.194 
+3010 	1002 	1309.95 	157.194 
 
- 3011 1001 9891.88 1187.0256 
-
+3011 	1001 	9891.88 	1187.0256 
  
 
 10 rows selected. 
@@ -1754,21 +1150,21 @@ order by rating desc;
 
  
 
- RATING CNAME SNUM 
+RATING 	CNAME 		SNUM 
 
----------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 300 grass 1002 
+300 	grass 		1002 
 
- 300 cisneros 1007 
+300 	cisneros 	1007 
 
- 200 giovanni 1003 
+200 	giovanni 	1003 
 
- 100 pereira 1004 
+100 	pereira 	1004 
 
- 100 clemens 1001 
+100 	clemens 	1001 
 
- 100 hoffman 1001 
+100 	hoffman 	1001 
 
  
 
@@ -1788,51 +1184,20 @@ order by "TOTAL ORDERS";
 
  
 
-TOTAL ORDERS ODATE 
+TOTAL 	ORDERS ODATE 
 
------------- --------- 
+<<<<<<<<<<<<<<<<<<<<
 
- 1 05-OCT-90 
+1 	05-OCT-90 
 
- 2 06-OCT-90 
+2 	06-OCT-90 
 
- 2 04-OCT-90 
+2	04-OCT-90 
 
- 5 03-OCT-90 
-
- 
+5	03-OCT-90 
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment – 9 
 
 Querying Multiple Tables at Once. 
@@ -1847,27 +1212,27 @@ SQL> select onum,cname from orders o,customers c where c.cnum=o.cnum ;
 
  
 
- ONUM CNAME 
+ ONUM 	CNAME 
 
----------- ---------- 
+<<<<<<<<<<<<<<<<
 
- 3001 cisneros 
+3001 	cisneros 
 
- 3003 hoffman 
+3003 	hoffman 
+	
+3002 	pereira 
 
- 3002 pereira 
+3006 	cisneros 
 
- 3006 cisneros 
+3009 	giovanni 
 
- 3009 giovanni 
+3007 	grass 
 
- 3007 grass 
+3008 	clemens 
 
- 3008 clemens 
+3010 	grass 
 
- 3010 grass 
-
- 3011 clemens 
+3011 	clemens 
 
  
 
@@ -1884,41 +1249,41 @@ o.snum=c.snum and o.snum=s.snum;
 
  
 
-SNAME CNAME ONUM 
+SNAME 		CNAME 		ONUM 
 
----------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-peel hoffman 3011 
+peel 		hoffman 	3011 
 
-peel hoffman 3008 
+peel 		hoffman 	3008 
 
-peel hoffman 3003 
+peel 		hoffman 	3003 
 
-axelrod giovanni 3009 
+axelrod 	giovanni 	3009 
 
-serres grass 3010 
+serres 		grass 		3010 
 
-serres grass 3007 
+serres 		grass 		3007 
 
-serres grass 3005 
+serres 		grass 		3005 
 
-peel clemens 3011 
+peel 		clemens 	3011 
 
-peel clemens 3008 
+peel 		clemens 	3008 
 
-peel clemens 3003 
+peel 		clemens 	3003 
 
-rifkin cisneros 3006 
+rifkin 		cisneros 	3006 
 
  
 
-SNAME CNAME ONUM 
+SNAME 		CNAME 		ONUM 
 
----------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-rifkin cisneros 3001 
+rifkin 		cisneros 	3001 
 
-Motika pereira 3002 
+Motika 		pereira 	3002 
 
  
 
@@ -1944,15 +1309,15 @@ Where c.snum=s.snum and comm>.12 ;
 
  
 
-CNAME SNUM RATE OF COMM. 
+CNAME 		SNUM 	RATE OF COMM. 
 
----------- ---------- ------------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-grass 1002 13 
+grass 		1002 	13 
 
-cisneros 1007 15 
+cisneros 	1007 	15 
 
-liu 1002 13 
+liu 		1002 	13 
 
  
 
@@ -1972,15 +1337,15 @@ where comm>.12;
 
  
 
-CNAME SNUM RATE OF COMM. 
+CNAME 		SNUM 	RATE OF COMM. 
 
----------- ---------- ------------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-grass 1002 13 
+grass 		1002 	13 
 
-cisneros 1007 15 
+cisneros 	1007 	15 
 
-liu 1002 13 
+liu 		1002 	13 
 
  
 
@@ -2006,110 +1371,34 @@ where rating>100;
 
  
 
- AMT COMM 
+AMT 		COMM 
 
----------- ---------- 
+<<<<<<<<<<<<<<<<<<<
 
- 18.69 .15 
+18.69 		.15 
 
- 5160.45 .13 
+5160.45 	.13
 
- 5160.45 .13 
+5160.45		.13 
 
-
- 1098.16 .15 
+1098.16		.15 
 
- 1713.23 .1 
+1713.23		.1 
 
- 75.75 .13 
+75.75 		.13 
 
- 75.75 .13 
+75.75 		.13 
 
- 1309.95 .13 
+1309.95 	.13 
 
- 1309.95 .13 
+1309.95 	.13 
 
  
 
 9 rows selected. 
 
- 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment – 10 
 
 Joining a Table to Itself. 
@@ -2121,8 +1410,6 @@ Exclude combinations of salespeople with themselves as well as duplicate rows wi
 the order reversed. 
 
 
- 
-
 SQL> select m.sname,n.sname,m.city 
 
 from salespeople m, salespeople n 
@@ -2130,19 +1417,16 @@ from salespeople m, salespeople n
 where m.city=n.city and m.sname<n.sname; 
 
  
+SNAME 	SNAME 	CITY 
 
-SNAME SNAME CITY 
+<<<<<<<<<<<<<<<<<<<<
 
----------- ---------- ---------- 
-
-Motika peel london 
+Motika 	peel 	london 
 
  
 
 2) Write a query that produces the names and cities of all customers with the same rating 
 as Hoffman. 
-
-
  
 
 SQL> select cname,city from customers 
@@ -2151,57 +1435,17 @@ where rating =(select rating from customers where cname='hoffman');
 
  
 
-CNAME CITY 
+CNAME 		CITY 
 
----------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<
 
-hoffman london 
+hoffman 	london 
 
-clemens london 
+clemens 	london 
 
-pereira rome 
+pereira 	rome 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment – 11 
 
 Subqueries. 
@@ -2222,13 +1466,13 @@ where cnum=(select cnum from customers where cname='cisneros');
 
  
 
-ALL ORDERS CNUM 
+ALLORDERS 	CNUM 
 
----------- ---------- 
+<<<<<<<<<<<<<<<<<<<<
 
- 3001 2008 
+3001 		2008 
 
- 3006 2008 
+3006 		2008 
 
 2) Write a query that produces the names and ratings of all customers who have 
 above-average orders. 
@@ -2246,13 +1490,14 @@ where cnum in
 
  
 
-CNAME RATING 
+CNAME 	RATING 
 
----------- ---------- 
+<<<<<<<<<<<<<
 
-liu 200 
+liu 	200 
 
 clemens 100 
+
 
 3) Write a query that selects the total amount in orders for each salesperson for 
 whom this total is greater than the amount of the largest order in the table. 
@@ -2270,31 +1515,14 @@ SQL> select sum(amt)
 
  
 
- SUM(AMT) 
+SUM(AMT) 
 
----------- 
+<<<<<<<<<<
 
- 15382.07 
+15382.07 
 
- 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment – 12 
 
 Using the operators ANY, ALL and SOME. 
@@ -2303,8 +1531,6 @@ Using the operators ANY, ALL and SOME.
 
 1) Write a query that selects all customers whose ratings are equal to or greater than 
 ANY of Serres’. 
-
-
  
 
 SQL> select * 
@@ -2335,17 +1561,17 @@ where sname='serres'
 
  
 
- CNUM CNAME CITY RATING SNUM 
+CNUM 	CNAME 		CITY 		RATING 	SNUM 
 
----------- ---------- ---------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 2008 cisneros san jose 300 1007 
+2008 	cisneros 	san jose 	300 	1007 
 
- 2004 grass berliln 300 1002 
+2004 	grass 		berliln 	300 	1002 
 
- 2002 giovanni rome 200 1003 
+2002 	giovanni 	rome 		200 	1003 
 
- 2003 liu san jose 200 1002 
+2003 	liu 		san jose 	200 	1002 
 
  
 
@@ -2360,31 +1586,17 @@ from customers);
 
  
 
- SNUM 
+SNUM 
 
----------- 
+<<<<<<
 
- 1007 
+1007 
 
- 1004 
-
- 1003 
-
+1004 
  
+1003 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
-
 3) Write a query that selects all orders for amounts greater than any for the 
 customers in London. 
 
@@ -2409,23 +1621,23 @@ select cnum from customers where city='london'
 
  
 
- ONUM AMT ODATE CNUM SNUM 
+ONUM 	AMT		ODATE 		CNUM 	SNUM 
 
----------- ---------- --------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 3011 9891.88 06-OCT-90 2006 1001 
+3011 	9891.88 	06-OCT-90 	2006 	1001 
 
- 3005 5160.45 03-OCT-90 2003 1002 
+3005 	5160.45 	03-OCT-90 	2003 	1002 
 
- 3008 4723 05-OCT-90 2006 1001 
+3008 	4723 		05-OCT-90 	2006 	1001 
 
- 3002 1900.1 03-OCT-90 2007 1004 
+3002 	1900.1 		03-OCT-90 	2007 	1004 
 
- 3009 1713.23 04-OCT-90 2002 1003 
+3009 	1713.23 	04-OCT-90 	2002 	1003 
 
- 3010 1309.95 06-OCT-90 2004 1002 
+3010 	1309.95 	06-OCT-90 	2004 	1002 
 
- 3006 1098.16 03-OCT-90 2008 1007 
+3006 	1098.16 	03-OCT-90 	2008 	1007 
 
  
 
@@ -2448,23 +1660,23 @@ where amt>
 
  
 
- ONUM AMT ODATE CNUM SNUM 
+ONUM 	AMT 		ODATE 		CNUM 	SNUM 
 
----------- ---------- --------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 3002 1900.1 03-OCT-90 2007 1004 
+3002 	1900.1 		03-OCT-90 	2007 	1004 
 
- 3005 5160.45 03-OCT-90 2003 1002 
+3005 	5160.45 	03-OCT-90 	2003 	1002 
 
- 3006 1098.16 03-OCT-90 2008 1007 
+3006 	1098.16 	03-OCT-90 	2008 	1007 
 
- 3009 1713.23 04-OCT-90 2002 1003 
+3009 	1713.23 	04-OCT-90 	2002 	1003 
 
- 3008 4723 05-OCT-90 2006 1001 
+3008 	4723 		05-OCT-90 	2006 	1001 
 
- 3010 1309.95 06-OCT-90 2004 1002 
+3010 	1309.95 	06-OCT-90 	2004 	1002 
 
- 3011 9891.88 06-OCT-90 2006 1001 
+3011 	9891.88 	06-OCT-90 	2006 	1001 
 
  
 
@@ -2472,13 +1684,6 @@ where amt>
 
  
 
- 
-
- 
-
- 
-
-
 Assignment – 13 
 
 Using the UNION clause. 
@@ -2506,24 +1711,23 @@ from customers where rating <=200;
 
  
 
-CNAME CITY RATING 
+CNAME 		CITY 		RATING 
 
----------- ---------- ----------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-cisneros san jose HIGH RATING 
+cisneros 	san jose 	HIGH RATING 
 
-clemens london LOW RATING 
+clemens 	london 		LOW RATING 
 
-giovanni rome LOW RATING 
+giovanni 	rome 		LOW RATING 
 
-grass berliln HIGH RATING 
+grass 		berliln 	HIGH RATING 
 
-hoffman london LOW RATING 
+hoffman 	london 		LOW RATING 
 
-liu san jose LOW RATING 
+liu 		san jose 	LOW RATING 
 
-pereira rome LOW RATING 
-
+pereira 	rome 		LOW RATING 
  
 
 7 rows selected. 
@@ -2551,28 +1755,18 @@ order by sname,cname;
 
  
 
-SNAME SNUM CNAME 
+SNAME 	SNUM 	CNAME 
 
----------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<
 
-Seel 1001 Clemens 
+Seel 	1001 	Clemens 
 
-Seel 1001 Hoffman 
+Seel 	1001 	Hoffman 
 
-Serres 1002 G 
+Serres 	1002 	G 
 
-Serres 1002 Liu 
+Serres 	1002 	Liu 
 
- 
-
- 
-
- 
-
-
- 
-
- 
 
 3) Form a union of three queries. Have the first select the snums of all salespeople in 
 San Jose; the second, the cnums of all customers in San Jose; and the third the 
@@ -2595,9 +1789,9 @@ select distinct snum from orders where snum in
 
  
 
- SNUM 
+SNUM 
 
----------- 
+<<<<<<<
 
  1001 
 
@@ -2607,59 +1801,7 @@ select distinct snum from orders where snum in
 
  1007 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment – 14 
 
 Entering, Deleting, and Changing Field Values. 
@@ -2694,29 +1836,29 @@ from orders;
 
  
 
- ONUM AMT ODATE CNUM SNUM 
+ONUM 	AMT 		ODATE 		CNUM 	SNUM 
 
----------- ---------- --------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 3001 18.69 03-OCT-90 2008 1007 
+3001 	18.69 		03-OCT-90	2008 	1007 
 
- 3003 767.19 03-OCT-90 2001 1001 
+3003 	767.19 		03-OCT-90 	2001 	1001 
 
- 3002 1900.1 03-OCT-90 2007 1004 
+3002 	1900.1 		03-OCT-90 	2007 	1004 
 
- 3005 5160.45 03-OCT-90 2003 1002 
+3005 	5160.45		03-OCT-90 	2003 	1002 
+	
+3006 	1098.16		03-OCT-90 	2008 	1007 
 
- 3006 1098.16 03-OCT-90 2008 1007 
+3009 	1713.23 	04-OCT-90 	2002 	1003 
 
- 3009 1713.23 04-OCT-90 2002 1003 
+3007 	75.75 		04-OCT-90 	2004 	1002 
 
- 3007 75.75 04-OCT-90 2004 1002 
+3008 	4723		05-OCT-90 	2006 	1001 
 
- 3008 4723 05-OCT-90 2006 1001 
+3010 	1309.95		06-OCT-90 	2004 	1002 
 
- 3010 1309.95 06-OCT-90 2004 1002 
-
- 3011 9891.88 06-OCT-90 2006 1001 
+3011 	9891.88		06-OCT-90 	2006 	1001 
 
  
 
@@ -2740,26 +1882,25 @@ from orders;
 
  
 
- ONUM AMT ODATE CNUM SNUM 
+ONUM 	AMT 		ODATE 		CNUM	SNUM 
 
----------- ---------- --------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 3001 18.69 03-OCT-90 2008 1007 
+3001 	18.69 		03-OCT-90 	2008 	1007 
 
- 3003 767.19 03-OCT-90 2001 1001 
+3003 	767.19 		03-OCT-90 	2001 	1001 
 
- 3002 1900.1 03-OCT-90 2007 1004 
+3002 	1900.1 		03-OCT-90	2007 	1004 
 
- 3005 5160.45 03-OCT-90 2003 1002 
+3005 	5160.45 	03-OCT-90 	2003 	1002 
 
-
- 3006 1098.16 03-OCT-90 2008 1007 
+3006 	1098.16 	03-OCT-90 	2008 	1007
 
- 3009 1713.23 04-OCT-90 2002 1003 
+3009 	1713.23 	04-OCT-90 	2002 	1003 
 
- 3007 75.75 04-OCT-90 2004 1002 
+3007 	75.75 		04-OCT-90 	2004 	1002 
 
- 3010 1309.95 06-OCT-90 2004 1002 
+3010 	1309.95 	06-OCT-90	2004 	1002 
 
  
 
@@ -2779,29 +1920,29 @@ SQL> select * from orders;
 
  
 
- ONUM AMT ODATE CNUM SNUM 
+ONUM 	AMT 		ODATE 		CNUM 	SNUM 
 
----------- ---------- --------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 3001 18.69 03-OCT-90 2008 1007 
+3001 	18.69 		03-OCT-90 	2008 	1007 
 
- 3003 767.19 03-OCT-90 2001 1001 
+3003 	767.19 		03-OCT-90 	2001 	1001 
 
- 3002 1900.1 03-OCT-90 2007 1004 
+3002 	1900.1 		03-OCT-90 	2007 	1004 
 
- 3005 5160.45 03-OCT-90 2003 1002 
+3005 	5160.45 	03-OCT-90 	2003 	1002 
 
- 3006 1098.16 03-OCT-90 2008 1007 
+3006 	1098.16 	03-OCT-90 	2008 	1007 
 
- 3009 1713.23 04-OCT-90 2002 1003 
+3009 	1713.23 	04-OCT-90 	2002 	1003 		
 
- 3007 75.75 04-OCT-90 2004 1002 
+3007 	75.75 		04-OCT-90 	2004 	1002 
 
- 3008 4723 05-OCT-90 2006 1001 
+3008 	4723 		05-OCT-90 	2006 	1001 
 
- 3010 1309.95 06-OCT-90 2004 1002 
+3010 	1309.95 	06-OCT-90 	2004 	1002 
 
- 3011 9891.88 06-OCT-90 2006 1001 
+3011 	9891.88 	06-OCT-90 	2006 	1001 
 
  
 
@@ -2817,24 +1958,23 @@ SQL> select * from orders;
 SQL> select * from customers; 
 
  
+CNUM	CNAME	CITY		RATING	SNUM 
 
- CNUM CNAME CITY RATING SNUM 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
----------- ---------- ---------- ---------- ---------- 
+2001	Hoffman		London 		100 	1001 
 
- 2001 Hoffman London 100 1001 
+2002 	Giovanni 	Rome 		200 	1003 
 
- 2002 Giovanni Rome 200 1003 
+2004 	Grass 		Berliln 	300 	1002 
 
- 2004 Grass Berliln 300 1002 
+2006 	Clemens 	London 		100 	1001 
 
- 2006 Clemens London 100 1001 
+2008 	Cisneros 	San Jose 	300 	1007 
 
- 2008 Cisneros San Jose 300 1007 
+2007 	Pereira 	Rome 		100 	1004 
 
- 2007 Pereira Rome 100 1004 
-
- 2003 Liu San Jose 200 1002 
+2003 	Liu 		San Jose 	200 	1002 
 
  
 
@@ -2845,8 +1985,6 @@ SQL> select * from customers;
 SQL> savepoint a; 
 
  
-
-
 Savepoint created. 
 
  
@@ -2865,23 +2003,23 @@ SQL> Select * From Customers;
 
  
 
- CNUM CNAME CITY RATING SNUM 
+CNUM 	CNAME 		CITY 		RATING 	SNUM 
 
----------- ---------- ---------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 2001 Hoffman London 200 1001 
+2001 	Hoffman 	London 		200 	1001 
 
- 2002 Giovanni Rome 300 1003 
+2002 	Giovanni 	Rome 		300 	1003 
 
- 2004 Grass Berliln 400 1002 
+2004 	Grass 		Berliln 	400 	1002 
 
- 2006 Clemens London 200 1001 
+2006 	Clemens 	London 		200 	1001 
 
- 2008 Cisneros San Jose 400 1007 
+2008 	Cisneros 	San Jose 	400 	1007 
 
- 2007 Pereira Rome 200 1004 
+2007 	Pereira 	Rome 		200 	1004 
 
- 2003 Liu San Jose 300 1002 
+2003 	Liu 		San Jose 	300 	1002 
 
  
 
@@ -2901,23 +2039,23 @@ SQL> select * from customers;
 
  
 
- CNUM CNAME CITY RATING SNUM 
+CNUM	CNAME		CITY		RATING	SNUM 
 
----------- ---------- ---------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 2001 Hoffman London 100 1001 
+2001 	Hoffman 	London 		100 	1001 
 
- 2002 Giovanni Rome 200 1003 
+2002 	Giovanni	Rome 		200 	1003 
 
- 2004 Grass Berliln 300 1002 
+2004 	Grass 		Berliln 	300 	1002 
 
- 2006 Clemens London 100 1001 
+2006 	Clemens 	London 		100 	1001 
 
- 2008 Cisneros San Jose 300 1007 
+2008 	Cisneros 	San Jose 	300 	1007 
 
- 2007 Pereira Rome 100 1004 
+2007 	Pereira 	Rome 		100 	1004 
 
- 2003 Liu San Jose 200 1002 
+2003 	Liu 		San Jose 	200 	1002 
 
  
 
@@ -2940,7 +2078,7 @@ where snum =(select snum from salespeople where sname='Motika');
 
 1 row updated. 
 
-
+
 Assignment – 15 
 
 Using Subqueries with DML Commands. 
@@ -2974,13 +2112,13 @@ SQL> select * from multicust;
 
  
 
- SNUM SNAME CITY COMM 
+SNUM 	SNAME 	CITY 		COMM 
 
----------- ---------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 1001 Peel London .12 
+1001 	Peel 	London 		.12 
 
- 1002 Serres San Jose .13 
+1002 	Serres 	San Jose 	.13 
 
  
 
@@ -3020,20 +2158,19 @@ from salespeople;
 
  
 
- SNUM SNAME CITY COMM 
+SNUM	SNAME		CITY		COMM 
 
----------- ---------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 1001 Peel London .12 
+1001 	Peel 		London 		.12 
 
- 1002 Serres San Jose .13 
+1002 	Serres 		San Jose 	.13 
 
- 1004 Motika London .11 
+1004 	Motika 		London 		.11 
 
- 1007 Rifkin Barcelona .15 
+1007 	Rifkin 		Barcelona 	.15 
 
-
- 1003 Axelrod Newyork .1 
+1003 	Axelrod 	Newyork 	.1 
 
  
 
@@ -3055,77 +2192,22 @@ from salespeople;
 
  
 
- SNUM SNAME CITY COMM 
+SNUM 	SNAME 		CITY 		COMM 
 
----------- ---------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 1001 Peel London .14 
+1001 	Peel 		London 		.14 
 
- 1002 Serres San Jose .16 
+1002 	Serres 		San Jose 	.16 
 
- 1004 Motika London .13 
+1004 	Motika 		London 		.13 
 
- 1007 Rifkin Barcelona .18 
+1007 	Rifkin 		Barcelona 	.18 
 
- 1003 Axelrod Newyork .12 
+1003 	Axelrod 	Newyork 	.12 
 
- 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment – 16 
 
 Creating Tables and Indexes. 
@@ -3158,21 +2240,19 @@ SQL> describe orders;
 
  
 
- Name Null? Type 
+Name 	Null? 		Type 
 
- ----------------------------------------- -------- ---------------------------- 
+<<<<<<<<<<<<<<<<<<<<<<<<
 
- 
+ONUM 			NUMBER(4) 
 
- ONUM NUMBER(4) 
+AMT 			NUMBER(7,2) 
 
- AMT NUMBER(7,2) 
+ODATE 			DATE 
 
- ODATE DATE 
+CNUM 			NUMBER(4) 
 
- CNUM NUMBER(4) 
-
- SNUM NUMBER(4) 
+SNUM 			NUMBER(4) 
 
  
 
@@ -3188,21 +2268,19 @@ Table altered.
 
 SQL> describe orders; 
 
- Name Null? Type 
+Name 	Null? 		Type 
 
- ----------------------------------------- -------- ---------------------------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 
+ONUM 	NOT NULL 	NUMBER(4) 
 
- ONUM NOT NULL NUMBER(4) 
+AMT 			NUMBER(7,2) 
 
- AMT NUMBER(7,2) 
+ODATE 			DATE 
 
- ODATE DATE 
+CNUM 			NUMBER(4) 
 
- CNUM NUMBER(4) 
-
- SNUM NUMBER(4) 
+SNUM 			NUMBER(4) 
 
  
 
@@ -3216,7 +2294,6 @@ SQL> create index I_DATE on orders(odate);
 
  
 
-
 4) Let us suppose that each salesperson is to have only one customer of a given 
 rating, and that this is currently the case. Enter a command that enforces it. 
 
@@ -3235,81 +2312,6 @@ rating primary key;
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment – 17 
 
 Constraining the Values of your data. 
@@ -3431,69 +2433,8 @@ ORA-02290: check constraint (ORAD178.ON_CN_SN) violated
 
  
 
- 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment – 18 
 
 Maintaining the Integrity of your Data. 
@@ -3530,21 +2471,19 @@ SQL> desc cityorders;
 
  
 
- Name Null? Type 
+Name 	Null? 		Type 
 
- ----------------------------------------- -------- ---------------------------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 
+ONUM 	NOT NULL 	NUMBER(4) 
 
- ONUM NOT NULL NUMBER(4) 
+AMT 			NUMBER(7,2) 
 
- AMT NUMBER(7,2) 
+SNUM 			NUMBER(4) 
 
- SNUM NUMBER(4) 
+CNUM 			NUMBER(4) 
 
- CNUM NUMBER(4) 
-
- CITY VARCHAR2(10) 
+CITY 			VARCHAR2(10) 
 
  
 
@@ -3581,16 +2520,7 @@ SQL> alter table copy_orders
 
  Table altered. 
 
-
- 
 
- 
-
- 
-
- 
-
- 
 
 Remember : 
 
@@ -3625,55 +2555,9 @@ To delete a constraint you cannot delete from the user_dictionary you have to wr
 
 Sql>alter table <table_name> drop constraint <constraint_name> 
 
- 
 
- 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment – 19 
 
 Views. 
@@ -3704,16 +2588,15 @@ View created.
 SQL> select * 
 
 from h_rated_cust; 
-
  
 
- CNUM CNAME CITY RATING SNUM 
+CNUM 	CNAME 		CITY 		RATING 	SNUM 
 
----------- ---------- ---------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 2004 Grass Berliln 300 1002 
+2004 	Grass 		Berliln 	300 	1002 
 
- 2008 Cisneros San Jose 300 1007 
+2008 	Cisneros 	San Jose 	300 	1007 
 
  
 
@@ -3740,19 +2623,18 @@ SQL> select * from tns_city;
 
  
 
-CITY NO. OF SALES PEOPLE 
+CITY 		NO. OF SALES PEOPLE 
 
----------- ------------------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+LONDON 		2 
 
-LONDON 2 
+BARCELONA 	1 
 
-BARCELONA 1 
+SAN JOSE 	1 
 
-SAN JOSE 1 
+SAN JOSE 	1 
 
-SAN JOSE 1 
-
-NEWYORK 1 
+NEWYORK 	1 
 
  
 
@@ -3779,22 +2661,21 @@ View created.
  
 
 SQL> SELECT * FROM AV_TOT_SAL; 
-
  
 
-SNAME AVERAGE TOTAL ORDERS 
+SNAME 		AVERAGETOTAL ORDERS 
 
----------- ---------- ------------ 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-Motika 3002 1 
+Motika 		3002 		1 
 
-Axelrod 3009 1 
+Axelrod 	3009 		1 
 
-Peel 3007.33333 3 
+Peel 		3007.33333 	3 
 
-Serres 3007.33333 3 
+Serres 		3007.33333 	3 
 
-Rifkin 3003.5 2 
+Rifkin 		3003.5 		2 
 
  
 
@@ -3823,43 +2704,28 @@ SQL> SELECT * FROM M_C;
 
 SNAME CNAME 
 
----------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<
 
-Peel Hoffman 
+Peel 		Hoffman 
 
-Axelrod Giovanni 
+Axelrod 	Giovanni 
 
-Serres Grass 
+Serres 		Grass 
 
-Peel Clemens 
+Peel 		Clemens 
 
-Rifkin Cisneros 
+Rifkin 		Cisneros 
 
-Serres Pereira 
+Serres 		Pereira 
 
-Serres Liu 
+Serres 		Liu 
 
  
 
 7 rows selected. 
 
- 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 HIERARCHICAL QUERY SOLUTION:- 
 
 SELECT deptno , 
@@ -3884,72 +2750,19 @@ FROM
 
  ORDER BY deptno; 
 
-1. DEPTNO EMP_STRING 
-2. ---------- ------------------------------------------------------------ 
-3. 10 CLARK,KING,MILLER 
-4. 20 SMITH,JONES,SCOTT,ADAMS,FORD 
-5. 30 ALLEN,WARD,MARTIN,BLAKE,TURNER,JAMES 
+
+DEPTNO 		EMP_STRING 
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+10 		CLARK,KING,MILLER 
+
+20 		SMITH,JONES,SCOTT,ADAMS,FORD 
+
+30 		ALLEN,WARD,MARTIN,BLAKE,TURNER,JAMES 
 
 
- 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment – 20 
 
 Changing Values through Views. 
@@ -4030,32 +2843,25 @@ from salespeople
 
 where comm between .10 and .20; 
 
- 
-
- 
-
- 
-
-
- 
 
 SQL> select * 
 
 from commission; 
 
- SNUM COMM 
 
----------- ---------- 
+SNUM 	COMM 
 
- 1001 .12 
+<<<<<<<<<<<
 
- 1002 .13 
+ 1001 	.12 
 
- 1004 .11 
+ 1002 	.13 
 
- 1007 .15 
+ 1004 	.11 
 
- 1003 .1 
+ 1007 	.15 
+
+ 1003 	.1 
 
 SQL> insert into commission 
 
@@ -4067,19 +2873,20 @@ SQL> select *
 
 from commission; 
 
- SNUM COMM 
 
----------- ---------- 
+SNUM 	COMM 
 
- 1001 .12 
+<<<<<<<<<<<<
 
- 1002 .13 
+1001 	.12 
 
- 1004 .11 
+1002 	.13 
 
- 1007 .15 
+1004 	.11 
 
- 1003 .1 
+1007 	.15 
+
+1003 	.1 
 
 SQL> select * 
 
@@ -4087,23 +2894,22 @@ from salespeople;
 
  
 
- SNUM SNAME CITY COMM 
+SNUM 	SNAME 		CITY 		COMM 
 
----------- ---------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 3000 .4 
+3000 					.4 
 
- 1001 peel london .12 
+1001 	peel 		london 		.12 
 
- 1002 serres san jose .13 
+1002 	serres 		san jose 	.13 
 
- 1004 Motika london .11 
+1004 	Motika 		london 		.11 
 
- 1007 rifkin barcelona .15 
+1007 	rifkin 		barcelona 	.15 
 
- 1003 axelrod newyork .1 
+1003 	axelrod 	newyork 	.1 
 
-
  
 
 3) Some SQL implementations have a built-in constant representing the current date, 
@@ -4113,22 +2919,6 @@ the value is accessed by commands such as Select or Insert. We will use a view o
 the Orders table called Entryorders to insert rows into the Orders table. Create the 
 Orders table, so that CURDATE is automatically inserted for odate if no value is 
 given. Then create the Entryorders view so that no values can be given. 
-
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
  
 
 Note: 
@@ -4144,53 +2934,10 @@ And now if you make update on view 2 then it will be made on the table t;
 But remember if you have used distinct keyword in base view then the identifier in view2 
 will be virtual view and they will not allow to update. 
 
- 
 
- 
 
- 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment - 21 
 
 Grant and Revoke. 
@@ -4207,69 +2954,39 @@ SQL> grant update on customers to Amit ;
  
 
 Grant succeeded 
-
  
 
 SQL> revoke update on customers from Amit ; 
-
  
 
 Revoke succeeded. 
 
  
 
- 
-
 2) Give Manoj the right to give other users the right to query the Orders table. 
-
-
- 
-
  
 
 SQL> grant select on orders to Manoj with grant option; 
-
- 
-
 Grant succeeded. 
-
- 
-
  
 
 SQL> grant select on Manoj.orders to Seema; 
 
- 
-
 Grant succeeded. 
-
  
 
- 
+SQL> grant update on Manoj.orders to Seema;  
 
-SQL> grant update on Manoj.orders to Seema; 
+insufficient privileges  
 
- 
-
-insufficient privileges 
-
- 
-
- 
 
 3) Take the INSERT privilege on Salespeople away from Ajita. 
 
-
- 
-
 SQL> revoke insert on salespeople from Ajita; 
-
  
 
 4) Grant Abhijeet the right to insert or update the Customers table while keeping her 
 possible rating values in the range of 100 to 500. 
-
-
  
 
 SQL> create or replace view range100 
@@ -4286,8 +3003,6 @@ with check option;
 
 View created. 
 
-
- 
 
 SQL> grant update on range100 to Ajita; 
 
@@ -4314,12 +3029,8 @@ ORA-01402: view WITH CHECK OPTION where-clause violation
  
 
 5) Allow Vikram to query the Customers table, but restrict his access to those 
-customers whose rating is the lowest. 
+customers whose rating is the lowest.  
 
-
- 
-
- 
 
 SQL> create or replace view restrictmin 
 
@@ -4339,47 +3050,8 @@ View created.
 
 SQL> grant select on restrictmin to Vikaram; 
 
- 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment –22 
 
 Global Aspects of SQL. 
@@ -4432,45 +3104,6 @@ transaction?
 If transaction is not commited or completed it will be rollbacked to previous 
 savepoint. 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 Assignment –23 
 
 Keeping your Database in order. 
@@ -4491,8 +3124,3 @@ effect 2 different synonyms.
  
 
 3) Find out how many tables have indexes on more than 50% of their columns. 
-
-
- 
-
-
