@@ -1,0 +1,4498 @@
+# Chapter 1
+
+
+----------------------Sql Assignments--------------------- 
+
+ 
+
+Assignment –1 
+
+Creating sample tables and inserting values. 
+
+ 
+
+Create the following tables with the given structures and insert sample data as specified: - 
+
+ 
+
+A) SALESPEOPLE 
+
+Snum number(4) 
+
+ Sname varchar2(10) 
+
+ City varchar2(10) 
+
+ Comm number(3,2) 
+
+Answer: 
+
+Create table salespeople 
+
+( 
+
+snum number(4), 
+
+sname varchar2(10), 
+
+city varchar2(10), 
+
+comm number(3,2) 
+
+); 
+
+ 
+
+B) CUSTOMERS 
+
+ Cnum number(4) 
+
+ Cname varchar2(10) 
+
+ City varchar2(10) 
+
+ Rating number(4) 
+
+ Snum number(4) 
+
+ 
+
+Answer: 
+
+Create table customers 
+
+( 
+
+cnum number(4), 
+
+cname varchar2(10), 
+
+city varchar2(10), 
+
+rating number(4), 
+
+snum number(4) 
+
+); 
+
+C) ORDERS 
+
+ Onum number(4) 
+
+ Amt number(7,2) 
+
+ Odate date 
+
+ Cnum number(4) 
+
+ Snum number(4) 
+
+Answer: 
+
+Create table orders 
+
+( 
+
+
+onum number(4), 
+
+ amt number(7,2), 
+
+ odate date, 
+
+ cnum number(4), 
+
+snum number(4) 
+
+); 
+
+ 
+
+ 
+
+SALES PEOPLE 
+
+SNUM 
+
+SNAME 
+
+CITY 
+
+COMM 
+
+1001 
+
+Peel 
+
+London 
+
+.12 
+
+1002 
+
+Serres 
+
+San Jose 
+
+.13 
+
+1004 
+
+Motika 
+
+London 
+
+.11 
+
+1007 
+
+Rifkin 
+
+Barcelona 
+
+.15 
+
+1003 
+
+Axelrod 
+
+New York 
+
+.10 
+
+
+
+ 
+
+Insert into salespeople values(&snum,’&name’,’&city’,&comm); 
+
+ CUSTOMERS 
+
+ 
+
+CNUM 
+
+CNAME 
+
+CITY 
+
+RATING 
+
+SNUM 
+
+2001 
+
+Hoffman 
+
+London 
+
+100 
+
+1001 
+
+2002 
+
+Giovanni 
+
+Rome 
+
+200 
+
+1003 
+
+2003 
+
+Liu 
+
+San Jose 
+
+200 
+
+1002 
+
+2004 
+
+Grass 
+
+Berlin 
+
+300 
+
+1002 
+
+2006 
+
+Clemens 
+
+London 
+
+100 
+
+1001 
+
+2008 
+
+Cisneros 
+
+San Jose 
+
+300 
+
+1007 
+
+2007 
+
+Pereira 
+
+Rome 
+
+100 
+
+1004 
+
+
+
+ ORDERS 
+
+Insert into customers values(&cnum,’&cname’,’&city’,&rating,&snum); 
+
+ 
+
+ONUM 
+
+AMT 
+
+ODATE 
+
+CNUM 
+
+SNUM 
+
+3001 
+
+18.69 
+
+03-OCT-1990 
+
+2008 
+
+1007 
+
+3003 
+
+767.19 
+
+03- OCT -1990 
+
+2001 
+
+1001 
+
+3002 
+
+1900.10 
+
+03- OCT -1990 
+
+2007 
+
+1004 
+
+3005 
+
+5160.45 
+
+03- OCT -1990 
+
+2003 
+
+1002 
+
+3006 
+
+1098.16 
+
+03- OCT -1990 
+
+2008 
+
+1007 
+
+3009 
+
+1713.23 
+
+04- OCT -1990 
+
+2002 
+
+1003 
+
+3007 
+
+75.75 
+
+04- OCT -1990 
+
+2004 
+
+1002 
+
+3008 
+
+4723.00 
+
+05- OCT -1990 
+
+2006 
+
+1001 
+
+3010 
+
+1309.95 
+
+06- OCT -1990 
+
+2004 
+
+1002 
+
+3011 
+
+9891.88 
+
+06- OCT -1990 
+
+2006 
+
+1001 
+
+
+
+ 
+
+Insert into orders values(&onum,&amt,’&odate’,&cnum,&snum); 
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+ONUM AMT ODATE CNUM SNUM 
+
+ 
+
+INSERT INTO ORDERS 
+
+VALUES(3001,18.69,'03-OCT-1990',2008, 1007); 
+
+ 
+
+INSERT INTO ORDERS 
+
+VALUES(3003,767.19,'03- OCT -1990',2001,1001); 
+
+ 
+
+INSERT INTO ORDERS 
+
+VALUES(3002,1900.10,'03- OCT -1990',2007,1004); 
+
+ 
+
+INSERT INTO ORDERS 
+
+VALUES(3005,5160.45,'03- OCT -1990',2003,1002); 
+
+ 
+
+INSERT INTO ORDERS 
+
+VALUES(3006,1098.16,'03- OCT -1990',2008,1007); 
+
+ 
+
+INSERT INTO ORDERS 
+
+VALUES(3009,1713.23,’04- OCT -1990’,2002,1003); 
+
+ 
+
+INSERT INTO ORDERS 
+
+VALUES(3007,75.75,’04- OCT -1990’,2004,1002); 
+
+ 
+
+INSERT INTO ORDERS 
+
+VALUES(3008,4723.00,’05- OCT -1990’,2006,1001); 
+
+ 
+
+INSERT INTO ORDERS 
+
+VALUES(3010,309.95,’06-OCT -1990’,2004,1002); 
+
+ 
+
+INSERT INTO ORDERS 
+
+VALUES(3011,9891.88,’06- OCT -1990’,2006,1001); 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment –2 
+
+Introducing Relational Databases. 
+
+ 
+
+1) Which field of the Customers table is the primary key? 
+
+
+Ans :- customer number 
+
+ 
+
+2) What is the 4th column of the Customers table? 
+
+
+Ans:- Rating 
+
+ 
+
+3) What is another word for row? For column? 
+
+
+Ans:- duple or record 
+
+ 
+
+4) Why isn’t it possible to see the first five rows of a table? 
+
+
+Ans :- Because tuples don’t have orders. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment –3 
+
+Overview of SQL. 
+
+ 
+
+1) Does ANSI recognize the data type DATE? 
+
+
+Ans :- Yes. 
+
+ 
+
+2) Which subdivision of SQL is used to put values in tables? 
+
+
+Ans :- insert into values 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment –4 
+
+Retrieving Information from Tables. 
+
+ 
+
+1) Write a select command that produces the order number, amount, and date for all 
+rows in the Orders table. 
+
+
+ 
+
+SQL>select onum, amt, odate 
+
+ from orders; 
+
+ 
+
+ UM AMT ODATE 
+
+---------- ---------- --------- 
+
+ 3001 18.69 03-OCT-90 
+
+ 3003 767.19 03-OCT-90 
+
+ 3002 1900.1 03-OCT-90 
+
+ 3005 5160.45 03-OCT-90 
+
+ 3006 1098.16 03-OCT-90 
+
+ 3009 1713.23 04-OCT-90 
+
+ 3007 75.75 04-OCT-90 
+
+ 3008 4723 05-OCT-90 
+
+ 3010 1309.95 06-OCT-90 
+
+ 3011 9891.88 06-OCT-90 
+
+ 
+
+10 rows selected. 
+
+ 
+
+2) Write a query that produces all rows from the Customers table for which the 
+salesperson’s number is 1001. 
+
+
+ 
+
+SQL> Select * 
+
+from customers where snum=1001; 
+
+ 
+
+ CNUM CNAME CITY RATING SNUM 
+
+---------- ---------- ---------- ---------- ---------- 
+
+ 2001 hoffman london 100 1001 
+
+ 2006 clemens london 100 1001 
+
+ 
+
+3) Write a query that displays the Salespeople table with the columns in the 
+following order: city, sname, snum, comm. 
+
+
+ 
+
+SQL> Select city, sname, snum, comm. 
+
+ from salespeople; 
+
+ 
+
+CITY SNAME SNUM COMM 
+
+---------- ---------- ---------- ---------- 
+
+london peel 1001 .12 
+
+san jose serres 1002 .13 
+
+london Motika 1004 .11 
+
+
+barcelona rifkin 1007 .15 
+
+newyork axelrod 1003 .1 
+
+ 
+
+4) Write a select command that produces the rating followed by the name of each 
+customer in San Jose. 
+
+
+ 
+
+SQL> Select rating||' '||cname "employee rating" 
+
+ from customers 
+
+ where city='sanjose'; 
+
+ 
+
+employee rating 
+
+--------------------------------------------------- 
+
+300 cisneros 
+
+ 
+
+5) Write a query that will produce the snum values of all salespeople (suppress the 
+duplicates) with orders in the Orders table. 
+
+
+ 
+
+SQL> Select distinct snum,onum 
+
+from salespeople 
+
+order by snum; 
+
+ 
+
+ SNUM ONUM 
+
+---------- ---------- 
+
+ 1002 3007 
+
+ 1002 3010 
+
+ 1001 3011 
+
+ 1004 3002 
+
+ 1002 3005 
+
+ 1007 3006 
+
+ 1003 3009 
+
+ 1001 3008 
+
+ 1007 3001 
+
+ 1001 3003 
+
+ 
+
+10 rows selected. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment –5 
+
+Relational and Logical Operators. 
+
+ 
+
+1) Write a query that will give you all orders for more than Rs. 1,000. 
+
+
+ 
+
+SQL> Select * 
+
+from orders where amt>1000; 
+
+ 
+
+ ONUM AMT ODATE CNUM SNUM 
+
+---------- ---------- --------- ---------- ---------- 
+
+ 3002 1900.1 03-OCT-90 2007 1004 
+
+ 3005 5160.45 03-OCT-90 2003 1002 
+
+ 3006 1098.16 03-OCT-90 2008 1007 
+
+ 3009 1713.23 04-OCT-90 2002 1003 
+
+ 3008 4723 05-OCT-90 2006 1001 
+
+ 3010 1309.95 06-OCT-90 2004 1002 
+
+ 3011 9891.88 06-OCT-90 2006 1001 
+
+ 
+
+7 rows selected. 
+
+ 
+
+2) Write a query that will give you the names and cities of all salespeople in London 
+with a commission above .10. 
+
+
+ 
+
+SQL> Select sname, city 
+
+from salespeople 
+
+where city='London' AND comm >.10; 
+
+ 
+
+SNAME CITY 
+
+---------- ---------- 
+
+peel London 
+
+Motika London 
+
+ 
+
+3) Write a query on the Customers table whose output will exclude all customers 
+with a rating <= 100, unless they are located in Rome. 
+
+
+ 
+
+SQL> Select * 
+
+ from customers 
+
+ where rating>100 or city='rome'; 
+
+ 
+
+ CNUM CNAME CITY RATING SNUM 
+
+---------- ---------- ---------- ---------- ---------- 
+
+ 2002 Giovanni Rome 200 1003 
+
+ 2003 Liu San Jose 200 1002 
+
+ 2004 Grass Berlin 300 1002 
+
+ 2008 Cisneros San Jose 300 1007 
+
+ 2007 Pereira Rome 100 1004 
+
+
+ 
+
+4) What will be the output from the following query? 
+
+
+ 
+
+ SQL> Select * 
+
+from Orders 
+
+ where 
+
+(amt < 1000 OR NOT (odate = ‘03-OCT-1990’ AND cnum > 2003)); 
+
+ 
+
+ ONUM AMT ODATE CNUM SNUM 
+
+---------- ---------- --------- ---------- ---------- 
+
+ 3001 18.69 03-OCT-90 2008 1007 
+
+ 3003 767.19 03-OCT-90 2001 1001 
+
+ 3005 5160.45 03-OCT-90 2003 1002 
+
+ 3009 1713.23 04-OCT-90 2002 1003 
+
+ 3007 75.75 04-OCT-90 2004 1002 
+
+ 3008 4723 05-OCT-90 2006 1001 
+
+ 3010 1309.95 06-OCT-90 2004 1002 
+
+ 3011 9891.88 06-OCT-90 2006 1001 
+
+ 
+
+ 
+
+Display all tauple from order except date is 03-oct 1990 with cnum >2003 or orders 
+where amt is less then 1000 or 
+
+Display all order having amount less then 1000 or having order except on 03-oct-1990 
+with cnum>2003. 
+
+ 
+
+5) What will be the output of the following query? 
+
+
+ 
+
+ SQL> Select * 
+
+ from Orders 
+
+ where NOT 
+
+ ((odate = ‘03-OCT-1990’ OR snum>1006) AND amt >= 1500); 
+
+ 
+
+ 
+
+ ONUM AMT ODATE CNUM SNUM 
+
+---------- ---------- --------- ---------- ---------- 
+
+ 3001 18.69 03-OCT-90 2008 1007 
+
+ 3003 767.19 03-OCT-90 2001 1001 
+
+ 3006 1098.16 03-OCT-90 2008 1007 
+
+ 3009 1713.23 04-OCT-90 2002 1003 
+
+ 3007 75.75 04-OCT-90 2004 1002 
+
+ 3008 4723 05-OCT-90 2006 1001 
+
+ 3010 1309.95 06-OCT-90 2004 1002 
+
+ 3011 9891.88 06-OCT-90 2006 1001 
+
+ 
+
+ 
+
+ 
+
+
+6) What is a simpler way to write this query? 
+
+
+ 
+
+ SQL> Select snum, sname, city, comm 
+
+From Salespeople 
+
+ where (comm > .12 OR comm <.14); 
+
+ 
+
+SQL> select snum,sname,city,comm 
+
+From salespeople 
+
+where comm =.13; 
+
+ 
+
+ SNUM SNAME CITY COMM 
+
+---------- ---------- ---------- ---------- 
+
+ 1002 Serres San Jose .13 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment –6 
+
+Using Special Operators in Conditions. 
+
+ 
+
+1) Write two different queries that would produce all orders taken on October 3rd or 
+4th, 1990. 
+
+
+SQL> select * 
+
+from orders 
+
+ where odate='03-oct-1990' or odate='04-oct-1990'; 
+
+ 
+
+ ONUM AMT ODATE CNUM SNUM 
+
+---------- ---------- --------- ---------- ---------- 
+
+ 3001 18.69 03-OCT-90 2008 1007 
+
+ 3003 767.19 03-OCT-90 2001 1001 
+
+ 3002 1900.1 03-OCT-90 2007 1004 
+
+ 3005 5160.45 03-OCT-90 2003 1002 
+
+ 3006 1098.16 03-OCT-90 2008 1007 
+
+ 3009 1713.23 04-OCT-90 2002 1003 
+
+ 3007 75.75 04-OCT-90 2004 1002 
+
+ 
+
+7 rows selected. 
+
+ 
+
+SQL> set feedback off; feed back disable 
+
+SQL> set feedback on; for feed back enable 
+
+ 
+
+SQL> select * 
+
+ from orders 
+
+where odate between '03-oct-1990' and '04-oct-1990'; 
+
+ 
+
+ ONUM AMT ODATE CNUM SNUM 
+
+---------- ---------- --------- ---------- ---------- 
+
+ 3001 18.69 03-OCT-90 2008 1007 
+
+ 3003 767.19 03-OCT-90 2001 1001 
+
+ 3002 1900.1 03-OCT-90 2007 1004 
+
+ 3005 5160.45 03-OCT-90 2003 1002 
+
+ 3006 1098.16 03-OCT-90 2008 1007 
+
+ 3009 1713.23 04-OCT-90 2002 1003 
+
+ 3007 75.75 04-OCT-90 2004 1002 
+
+ 
+
+2) Write a query that selects all of the customers serviced by Peel or Motika. 
+
+
+(Hint: the snum field relates the two tables to one another). 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+SQL> select * 
+
+from customers 
+
+where snum in 
+
+(select snum from salespeople where sname='Peel' or sname='Motika'); 
+
+ 
+
+ 
+
+ CNUM CNAME CITY RATING SNUM 
+
+---------- ---------- ---------- ---------- ---------- 
+
+ 2006 Clemense London 100 1001 
+
+ 2001 Hoffman London 100 1001 
+
+ 2008 Cisneros San Jose 300 1007 
+
+ 
+
+3) Write a query that will produce all the customers whose names begin with a letter 
+from ‘A’ to ‘G’. 
+
+
+ 
+
+SQL> select * 
+
+ from customers 
+
+ where cname like 'a%' or cname like 'b%' or cname like 'C%' or 
+
+ cname like 'D%' or cname like 'E%' or cname like 'F%' or cname like 
+'G%' ; 
+
+ 
+
+ CNUM CNAME CITY RATING SNUM 
+
+---------- ---------- ---------- ---------- ---------- 
+
+ 2002 Giovanni Rome 200 1003 
+
+ 2004 Grass Berlin 300 1002 
+
+ 2006 Clemense London 100 1001 
+
+ 2008 Cisneros San Jose 300 1007 
+
+ 
+
+4 rows selected. 
+
+ 
+
+Second approach 
+
+ 
+
+SQL> select * 
+
+from customers 
+
+where substr(cname,1,1) between 'A' and 'G'; 
+
+ 
+
+ CNUM CNAME CITY RATING SNUM 
+
+---------- ---------- ---------- ---------- ---------- 
+
+ 2002 Giovanni Rome 200 1003 
+
+ 2004 Grass Berlin 300 1002 
+
+ 2006 Clemense London 100 1001 
+
+ 2008 Cisneros San Jose 300 1007 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+4) Write a query that selects all customers whose names begin with the letter ‘C’. 
+
+
+ 
+
+SQL> select * 
+
+ from customers 
+
+ where cname like 'C%'; 
+
+ 
+
+ 
+
+ CNUM CNAME CITY RATING SNUM 
+
+---------- ---------- ---------- ---------- ---------- 
+
+ 2006 Clemense London 100 1001 
+
+ 2008 Cisneros San Jose 300 1007 
+
+ 
+
+2 rows selected. 
+
+ 
+
+5) Write a query that selects all orders except those with zeroes or NULLs in the amt 
+field. 
+
+
+SQL> select * 
+
+from orders 
+
+where amt is not null; 
+
+ 
+
+ ONUM AMT ODATE CNUM SNUM 
+
+---------- ---------- --------- ---------- ---------- 
+
+ 3001 18.69 03-OCT-90 2008 1007 
+
+ 3003 767.19 03-OCT-90 2001 1001 
+
+ 3002 1900.1 03-OCT-90 2007 1004 
+
+ 3005 5160.45 03-OCT-90 2003 1002 
+
+ 3006 1098.16 03-OCT-90 2008 1007 
+
+ 3009 1713.23 04-OCT-90 2002 1003 
+
+ 3007 75.75 04-OCT-90 2004 1002 
+
+ 3008 4723 05-OCT-90 2006 1001 
+
+ 3010 1309.95 06-OCT-90 2004 1002 
+
+ 3011 9891.88 06-OCT-90 2006 1001 
+
+ 
+
+10 rows selected. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment –7 
+
+Summarizing Data with Aggregate Functions. 
+
+ 
+
+1) Write a query that counts all orders for October 3. 
+
+
+SQL> select count(onum) total_order 
+
+from orders 
+
+where odate like '03-OCT-%'; 
+
+ 
+
+TOTAL_ORDER 
+
+----------- 
+
+ 5 
+
+ 
+
+1 row selected. 
+
+ 
+
+2) Write a query that counts the number of different non-NULL city values in the 
+Customers table. 
+
+
+SQL> select count(cname) empty_city 
+
+ from customers 
+
+ where cname is not null; 
+
+ 
+
+EMPTY_CITY 
+
+---------- 
+
+ 7 
+
+ 
+
+3) Write a query that selects each customer’s smallest order. 
+
+
+ 
+
+SQL> select min(amt) ) "smallest order",cnum 
+
+from orders 
+
+group by cnum; 
+
+ 
+
+ MIN(AMT) CNUM 
+
+---------- ---------- 
+
+ 767.19 2001 
+
+ 4723 2006 
+
+ 1900.1 2007 
+
+
+ 5160.45 2003 
+
+ 75.75 2004 
+
+ 18.69 2008 
+
+ 1713.23 2002 
+
+ 
+
+7 rows selected. 
+
+ 
+
+4) Write a query that selects the first customer, in alphabetical order, whose name 
+begins with G. 
+
+
+ 
+
+SQL> select * 
+
+from customers 
+
+where cname like 'G%' order by cname; 
+
+ 
+
+ CNUM CNAME CITY RATING SNUM 
+
+---------- ---------- ---------- ---------- ---------- 
+
+ 2002 Giovanni Rome 200 1003 
+
+ 2004 Grass Berlin 300 1002 
+
+2 rows selected. 
+
+ 
+
+5) Write a query that selects the highest rating in each city. 
+
+
+SQL> select max(rating) "highest rating" 
+
+ from customers; 
+
+highest rating 
+
+-------------- 
+
+ 300 
+
+ 
+
+1 row selected. 
+
+ 
+
+6) Write a query that counts the number of salespeople registering orders for each 
+day. (If a salesperson has more than one order on a given day, he or she should be 
+counted only once.). 
+
+
+SQL> select count(odate)||' SALES PERSON REGISTREDDON' 
+
+"TOTAL",odate 
+
+from orders group by odate; 
+
+
+ 
+
+TOTAL ODATE 
+
+-------------------------------------------------------------------- --------- 
+
+2 SALES PERSON REGISTREDD ON 04-OCT-90 
+
+1 SALES PERSON REGISTREDD ON 05-OCT-90 
+
+5 SALES PERSON REGISTREDD ON 03-OCT-90 
+
+2 SALES PERSON REGISTREDD ON 06-OCT-90 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment –8 
+
+Formatting Query output. 
+
+ 
+
+1) Assume each salesperson has a 12% commission. Write a query on the orders 
+table that will produce the order number, the salesperson number, and the amount 
+of the salesperson’s commission for that order. 
+
+
+SQL> select onum,snum,amt,(amt*12)/100 commision 
+
+ from orders; 
+
+ 
+
+ ONUM SNUM AMT COMMISION 
+
+ ---------- ---------- ---------- ---------- 
+
+ 3001 1007 18.69 2.2428 
+
+ 3003 1001 767.19 92.0628 
+
+ 3002 1004 1900.1 228.012 
+
+ 3005 1002 5160.45 619.254 
+
+ 3006 1007 1098.16 131.7792 
+
+ 3009 1003 1713.23 205.5876 
+
+ 3007 1002 75.75 9.09 
+
+ 3008 1001 4723 566.76 
+
+ 3010 1002 1309.95 157.194 
+
+ 3011 1001 9891.88 1187.0256 
+
+ 
+
+10 rows selected. 
+
+ 
+
+2) Write a query on the Customers table that will find the highest rating in each city. 
+Put the output in this form: 
+
+
+ For the city (city), the highest rating is : (rating). 
+
+ 
+
+SQL> select onum,snum,amt,(amt*12)/100 commision 
+
+ from orders; 
+
+ 
+
+ ONUM SNUM AMT COMMISION 
+
+---------- ---------- ---------- ---------- 
+
+ 3001 1007 18.69 2.2428 
+
+ 3003 1001 767.19 92.0628 
+
+ 3002 1004 1900.1 228.012 
+
+ 3005 1002 5160.45 619.254 
+
+ 3006 1007 1098.16 131.7792 
+
+ 3009 1003 1713.23 205.5876 
+
+ 3007 1002 75.75 9.09 
+
+ 3008 1001 4723 566.76 
+
+ 3010 1002 1309.95 157.194 
+
+ 3011 1001 9891.88 1187.0256 
+
+ 
+
+10 rows selected. 
+
+ 
+
+
+3) Write a query that lists customers in descending order of rating. Output the rating 
+field first, followed by the customer’s name and number. 
+
+
+ 
+
+SQL> select rating,cname,snum 
+
+from customers 
+
+order by rating desc; 
+
+ 
+
+ RATING CNAME SNUM 
+
+---------- ---------- ---------- 
+
+ 300 grass 1002 
+
+ 300 cisneros 1007 
+
+ 200 giovanni 1003 
+
+ 100 pereira 1004 
+
+ 100 clemens 1001 
+
+ 100 hoffman 1001 
+
+ 
+
+4) Write a query that totals the orders for each day and places the results in 
+descending order. 
+
+
+ 
+
+SQL> select count(odate) "TOTAL ORDERS",odate 
+
+from orders 
+
+group by odate 
+
+order by "TOTAL ORDERS"; 
+
+ 
+
+TOTAL ORDERS ODATE 
+
+------------ --------- 
+
+ 1 05-OCT-90 
+
+ 2 06-OCT-90 
+
+ 2 04-OCT-90 
+
+ 5 03-OCT-90 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment – 9 
+
+Querying Multiple Tables at Once. 
+
+ 
+
+1) Write a query that lists each order number followed by the name of the customer 
+who made the order. 
+
+
+SQL> select onum,cname from orders o,customers c where c.cnum=o.cnum ; 
+
+ 
+
+ ONUM CNAME 
+
+---------- ---------- 
+
+ 3001 cisneros 
+
+ 3003 hoffman 
+
+ 3002 pereira 
+
+ 3006 cisneros 
+
+ 3009 giovanni 
+
+ 3007 grass 
+
+ 3008 clemens 
+
+ 3010 grass 
+
+ 3011 clemens 
+
+ 
+
+9 rows selected. 
+
+ 
+
+2) Write a query that gives the names of both the salesperson and the customer for 
+each order along with the order number. 
+
+
+SQL> select sname,cname,onum from orders o,customers c,salespeople s where 
+o.snum=c.snum and o.snum=s.snum; 
+
+ 
+
+SNAME CNAME ONUM 
+
+---------- ---------- ---------- 
+
+peel hoffman 3011 
+
+peel hoffman 3008 
+
+peel hoffman 3003 
+
+axelrod giovanni 3009 
+
+serres grass 3010 
+
+serres grass 3007 
+
+serres grass 3005 
+
+peel clemens 3011 
+
+peel clemens 3008 
+
+peel clemens 3003 
+
+rifkin cisneros 3006 
+
+ 
+
+SNAME CNAME ONUM 
+
+---------- ---------- ---------- 
+
+rifkin cisneros 3001 
+
+Motika pereira 3002 
+
+ 
+
+13 rows selected. 
+
+
+ 
+
+3) Write a query that produces all customers serviced by salespeople with a 
+commission above 12%. Output the customer’s name, the salesperson’s name, 
+and the salesperson’s rate of commission. 
+
+
+ 
+
+OLD STYLE: 
+
+SQL> select cname,s.snum,comm*100 "RATE OF COMM." 
+
+from customers c,salespeople s 
+
+Where c.snum=s.snum and comm>.12 ; 
+
+ 
+
+CNAME SNUM RATE OF COMM. 
+
+---------- ---------- ------------- 
+
+grass 1002 13 
+
+cisneros 1007 15 
+
+liu 1002 13 
+
+ 
+
+ NEW STYLE: 
+
+ 
+
+SQL> select cname,snum,comm*100 "RATE OF COMM." 
+
+from customers 
+
+join 
+
+salespeople using (snum) 
+
+where comm>.12; 
+
+ 
+
+CNAME SNUM RATE OF COMM. 
+
+---------- ---------- ------------- 
+
+grass 1002 13 
+
+cisneros 1007 15 
+
+liu 1002 13 
+
+ 
+
+4) Write a query that calculates the amount of the salesperson’s commission on each 
+order by a customer with a rating above 100. 
+
+
+ 
+
+SQL> select amt,comm from salespeople 
+
+ join 
+
+customers using(snum) 
+
+join 
+
+orders using(snum) 
+
+where rating>100; 
+
+ 
+
+ 
+
+ AMT COMM 
+
+---------- ---------- 
+
+ 18.69 .15 
+
+ 5160.45 .13 
+
+ 5160.45 .13 
+
+
+ 1098.16 .15 
+
+ 1713.23 .1 
+
+ 75.75 .13 
+
+ 75.75 .13 
+
+ 1309.95 .13 
+
+ 1309.95 .13 
+
+ 
+
+9 rows selected. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment – 10 
+
+Joining a Table to Itself. 
+
+ 
+
+1) Write a query that produces all pairs of salespeople who are living in the same city. 
+Exclude combinations of salespeople with themselves as well as duplicate rows with 
+the order reversed. 
+
+
+ 
+
+SQL> select m.sname,n.sname,m.city 
+
+from salespeople m, salespeople n 
+
+where m.city=n.city and m.sname<n.sname; 
+
+ 
+
+SNAME SNAME CITY 
+
+---------- ---------- ---------- 
+
+Motika peel london 
+
+ 
+
+2) Write a query that produces the names and cities of all customers with the same rating 
+as Hoffman. 
+
+
+ 
+
+SQL> select cname,city from customers 
+
+where rating =(select rating from customers where cname='hoffman'); 
+
+ 
+
+CNAME CITY 
+
+---------- ---------- 
+
+hoffman london 
+
+clemens london 
+
+pereira rome 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment – 11 
+
+Subqueries. 
+
+ 
+
+1) Write a query that uses a subquery to obtain all orders for the customer named 
+Cisneros. Assume you do not know his customer number (cnum). 
+
+
+ 
+
+SQL> select onum "ALL ORDERS" ,cnum 
+
+from orders 
+
+where cnum=(select cnum from customers where cname='cisneros'); 
+
+ 
+
+ALL ORDERS CNUM 
+
+---------- ---------- 
+
+ 3001 2008 
+
+ 3006 2008 
+
+2) Write a query that produces the names and ratings of all customers who have 
+above-average orders. 
+
+
+ 
+
+SQL> select cname,rating 
+
+ from customers 
+
+where cnum in 
+
+(select cnum from orders where amt > (select avg(amt) from orders)); 
+
+ 
+
+CNAME RATING 
+
+---------- ---------- 
+
+liu 200 
+
+clemens 100 
+
+3) Write a query that selects the total amount in orders for each salesperson for 
+whom this total is greater than the amount of the largest order in the table. 
+
+
+ 
+
+SQL> select sum(amt) 
+
+ from orders 
+
+ group by snum 
+
+ having sum(amt)>(select max(amt) from orders); 
+
+ 
+
+ SUM(AMT) 
+
+---------- 
+
+ 15382.07 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment – 12 
+
+Using the operators ANY, ALL and SOME. 
+
+ 
+
+1) Write a query that selects all customers whose ratings are equal to or greater than 
+ANY of Serres’. 
+
+
+ 
+
+SQL> select * 
+
+from customers 
+
+where rating >=any 
+
+( 
+
+select rating 
+
+from customers 
+
+where snum in 
+
+( 
+
+select snum 
+
+from salespeople 
+
+where sname='serres' 
+
+) 
+
+); 
+
+ 
+
+ CNUM CNAME CITY RATING SNUM 
+
+---------- ---------- ---------- ---------- ---------- 
+
+ 2008 cisneros san jose 300 1007 
+
+ 2004 grass berliln 300 1002 
+
+ 2002 giovanni rome 200 1003 
+
+ 2003 liu san jose 200 1002 
+
+ 
+
+2) Write a query using ANY or ALL that will find all salespeople who have no 
+customers located in their city. 
+
+
+ 
+
+SQL>select snum from salespeople where (snum,city) not in (select snum ,city 
+from customers); 
+
+ 
+
+ SNUM 
+
+---------- 
+
+ 1007 
+
+ 1004 
+
+ 1003 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+3) Write a query that selects all orders for amounts greater than any for the 
+customers in London. 
+
+
+ 
+
+SQL> select * 
+
+from orders where amt> any 
+
+( 
+
+select amt from orders where cnum in 
+
+( 
+
+select cnum from customers where city='london' 
+
+) 
+
+); 
+
+ 
+
+ ONUM AMT ODATE CNUM SNUM 
+
+---------- ---------- --------- ---------- ---------- 
+
+ 3011 9891.88 06-OCT-90 2006 1001 
+
+ 3005 5160.45 03-OCT-90 2003 1002 
+
+ 3008 4723 05-OCT-90 2006 1001 
+
+ 3002 1900.1 03-OCT-90 2007 1004 
+
+ 3009 1713.23 04-OCT-90 2002 1003 
+
+ 3010 1309.95 06-OCT-90 2004 1002 
+
+ 3006 1098.16 03-OCT-90 2008 1007 
+
+ 
+
+7 rows selected. 
+
+ 
+
+4) Write the above query using MIN or MAX. 
+
+
+ 
+
+SQL> select * 
+
+from orders 
+
+where amt> 
+
+(select min(amt) from customers natural join orders where city='london'); 
+
+ 
+
+ ONUM AMT ODATE CNUM SNUM 
+
+---------- ---------- --------- ---------- ---------- 
+
+ 3002 1900.1 03-OCT-90 2007 1004 
+
+ 3005 5160.45 03-OCT-90 2003 1002 
+
+ 3006 1098.16 03-OCT-90 2008 1007 
+
+ 3009 1713.23 04-OCT-90 2002 1003 
+
+ 3008 4723 05-OCT-90 2006 1001 
+
+ 3010 1309.95 06-OCT-90 2004 1002 
+
+ 3011 9891.88 06-OCT-90 2006 1001 
+
+ 
+
+7 rows selected. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment – 13 
+
+Using the UNION clause. 
+
+ 
+
+1) Create a union of two queries that shows the names, cities, and ratings of all 
+customers. Those with rating of 200 or greater will also have the words “High 
+Rating”, while the others will have the words “Low Rating”. 
+
+
+ 
+
+SQL> select cname,city,'HIGH RATING' RATING 
+
+from customers 
+
+where rating>200 
+
+UNION 
+
+select cname,city,'LOW RATING' RATING 
+
+from customers where rating <=200; 
+
+ 
+
+CNAME CITY RATING 
+
+---------- ---------- ----------- 
+
+cisneros san jose HIGH RATING 
+
+clemens london LOW RATING 
+
+giovanni rome LOW RATING 
+
+grass berliln HIGH RATING 
+
+hoffman london LOW RATING 
+
+liu san jose LOW RATING 
+
+pereira rome LOW RATING 
+
+ 
+
+7 rows selected. 
+
+ 
+
+ 
+
+2) Write a command that produces the name and number of each salesperson and 
+each customer with more than one current order. Put the results in alphabetical 
+order. 
+
+
+ 
+
+SQL> select sname,snum,cname 
+
+from salespeople join customers using(snum) 
+
+where snum in 
+
+(select snum from customers group by snum having count(snum)>1) 
+
+order by sname,cname; 
+
+ 
+
+SNAME SNUM CNAME 
+
+---------- ---------- ---------- 
+
+Seel 1001 Clemens 
+
+Seel 1001 Hoffman 
+
+Serres 1002 G 
+
+Serres 1002 Liu 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+ 
+
+3) Form a union of three queries. Have the first select the snums of all salespeople in 
+San Jose; the second, the cnums of all customers in San Jose; and the third the 
+onums of all orders on October 3. Retain duplicates between the last two queries 
+but eliminate any redundancies between either of them and the first. 
+
+
+ (Note: in the sample tables as given, there would be no such redundancy. This is 
+besides the point.) 
+
+ 
+
+SQL> select snum from salespeople where city='san jose' 
+
+UNION 
+
+select distinct snum from orders where snum in 
+
+(select snum from orders where odate like '03-OCT-%'); 
+
+ 
+
+ SNUM 
+
+---------- 
+
+ 1001 
+
+ 1002 
+
+ 1004 
+
+ 1007 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment – 14 
+
+Entering, Deleting, and Changing Field Values. 
+
+ 
+
+1) Write a command that puts the following values, in their given order, into the 
+salespeople table: city – San Jose, name – Blanco, comm – NULL, snum – 1100. 
+
+
+ 
+
+SQL> insert into salespeople (city,sname,comm,snum) 
+
+values('San Jose','Blanco',NULL,1100); 
+
+ 
+
+1 row created. 
+
+ 
+
+2) Write a command that removes all orders from customer Clemens from the 
+Orders table. 
+
+
+ 
+
+SQL> select * 
+
+from orders; 
+
+ 
+
+ ONUM AMT ODATE CNUM SNUM 
+
+---------- ---------- --------- ---------- ---------- 
+
+ 3001 18.69 03-OCT-90 2008 1007 
+
+ 3003 767.19 03-OCT-90 2001 1001 
+
+ 3002 1900.1 03-OCT-90 2007 1004 
+
+ 3005 5160.45 03-OCT-90 2003 1002 
+
+ 3006 1098.16 03-OCT-90 2008 1007 
+
+ 3009 1713.23 04-OCT-90 2002 1003 
+
+ 3007 75.75 04-OCT-90 2004 1002 
+
+ 3008 4723 05-OCT-90 2006 1001 
+
+ 3010 1309.95 06-OCT-90 2004 1002 
+
+ 3011 9891.88 06-OCT-90 2006 1001 
+
+ 
+
+10 rows selected. 
+
+ 
+
+SQL> delete from orders 
+
+where cnum in (select cnum from customers where cname='Clemens'); 
+
+ 
+
+2 rows deleted. 
+
+ 
+
+SQL> select * 
+
+from orders; 
+
+ 
+
+ ONUM AMT ODATE CNUM SNUM 
+
+---------- ---------- --------- ---------- ---------- 
+
+ 3001 18.69 03-OCT-90 2008 1007 
+
+ 3003 767.19 03-OCT-90 2001 1001 
+
+ 3002 1900.1 03-OCT-90 2007 1004 
+
+ 3005 5160.45 03-OCT-90 2003 1002 
+
+
+ 3006 1098.16 03-OCT-90 2008 1007 
+
+ 3009 1713.23 04-OCT-90 2002 1003 
+
+ 3007 75.75 04-OCT-90 2004 1002 
+
+ 3010 1309.95 06-OCT-90 2004 1002 
+
+ 
+
+8 rows selected. 
+
+ 
+
+SQL> rollback to savepoint a; 
+
+ 
+
+Rollback complete. 
+
+ 
+
+SQL> select * from orders; 
+
+ 
+
+ ONUM AMT ODATE CNUM SNUM 
+
+---------- ---------- --------- ---------- ---------- 
+
+ 3001 18.69 03-OCT-90 2008 1007 
+
+ 3003 767.19 03-OCT-90 2001 1001 
+
+ 3002 1900.1 03-OCT-90 2007 1004 
+
+ 3005 5160.45 03-OCT-90 2003 1002 
+
+ 3006 1098.16 03-OCT-90 2008 1007 
+
+ 3009 1713.23 04-OCT-90 2002 1003 
+
+ 3007 75.75 04-OCT-90 2004 1002 
+
+ 3008 4723 05-OCT-90 2006 1001 
+
+ 3010 1309.95 06-OCT-90 2004 1002 
+
+ 3011 9891.88 06-OCT-90 2006 1001 
+
+ 
+
+10 rows selected. 
+
+ 
+
+3) Write a command that increases the rating of all customers in Rome by 100. 
+
+
+ 
+
+SQL> select * from customers; 
+
+ 
+
+ CNUM CNAME CITY RATING SNUM 
+
+---------- ---------- ---------- ---------- ---------- 
+
+ 2001 Hoffman London 100 1001 
+
+ 2002 Giovanni Rome 200 1003 
+
+ 2004 Grass Berliln 300 1002 
+
+ 2006 Clemens London 100 1001 
+
+ 2008 Cisneros San Jose 300 1007 
+
+ 2007 Pereira Rome 100 1004 
+
+ 2003 Liu San Jose 200 1002 
+
+ 
+
+7 rows selected. 
+
+ 
+
+SQL> savepoint a; 
+
+ 
+
+
+Savepoint created. 
+
+ 
+
+SQL> update customers 
+
+set rating=rating+100; 
+
+ 
+
+7 rows updated. 
+
+ 
+
+SQL> Select * From Customers; 
+
+ 
+
+ CNUM CNAME CITY RATING SNUM 
+
+---------- ---------- ---------- ---------- ---------- 
+
+ 2001 Hoffman London 200 1001 
+
+ 2002 Giovanni Rome 300 1003 
+
+ 2004 Grass Berliln 400 1002 
+
+ 2006 Clemens London 200 1001 
+
+ 2008 Cisneros San Jose 400 1007 
+
+ 2007 Pereira Rome 200 1004 
+
+ 2003 Liu San Jose 300 1002 
+
+ 
+
+7 rows selected. 
+
+ 
+
+SQL> rollback to savepoint a; 
+
+ 
+
+Rollback complete. 
+
+ 
+
+SQL> select * from customers; 
+
+ 
+
+ CNUM CNAME CITY RATING SNUM 
+
+---------- ---------- ---------- ---------- ---------- 
+
+ 2001 Hoffman London 100 1001 
+
+ 2002 Giovanni Rome 200 1003 
+
+ 2004 Grass Berliln 300 1002 
+
+ 2006 Clemens London 100 1001 
+
+ 2008 Cisneros San Jose 300 1007 
+
+ 2007 Pereira Rome 100 1004 
+
+ 2003 Liu San Jose 200 1002 
+
+ 
+
+7 rows selected. 
+
+ 
+
+4) Salesperson Serres has left the company. Assign her customers to Motika. 
+
+
+ 
+
+SQL> update customers 
+
+set snum=(select snum from salespeople where sname='serres') 
+
+where snum =(select snum from salespeople where sname='Motika'); 
+
+ 
+
+1 row updated. 
+
+
+Assignment – 15 
+
+Using Subqueries with DML Commands. 
+
+ 
+
+1) Assume there is a table called Multicust, with all of the same column definitions 
+as Salespeople. Write a command that inserts all salespeople with more than one 
+customer into this table. 
+
+
+ 
+
+SQL> create table Multicast 
+
+ as 
+
+ select * 
+
+from salespeople where snum in 
+
+ (select snum from customers group by snum having count(snum)>1); 
+
+ 
+
+2 rows created. 
+
+ 
+
+SQL> select * from multicust; 
+
+ 
+
+ SNUM SNAME CITY COMM 
+
+---------- ---------- ---------- ---------- 
+
+ 1001 Peel London .12 
+
+ 1002 Serres San Jose .13 
+
+ 
+
+2) Write a command that deletes all customers with no current orders. 
+
+
+ 
+
+SQL> insert into customers values(2012,'rakesh','bikaner',500,1005); 
+
+1 row created. 
+
+ 
+
+SQL> delete customers 
+
+where cnum=any 
+
+(select cnum from orders where cnum not in(select cnum from 
+customers)); 
+
+ 
+
+1 rows deleted. 
+
+ 
+
+3) Write a command that increases by twenty percent the commissions of all 
+salespeople with total current orders above Rs. 3,000. 
+
+
+ 
+
+SQL> select * 
+
+from salespeople; 
+
+ 
+
+ SNUM SNAME CITY COMM 
+
+---------- ---------- ---------- ---------- 
+
+ 1001 Peel London .12 
+
+ 1002 Serres San Jose .13 
+
+ 1004 Motika London .11 
+
+ 1007 Rifkin Barcelona .15 
+
+
+ 1003 Axelrod Newyork .1 
+
+ 
+
+SQL> update salespeople 
+
+set comm=comm*1.20 
+
+where snum in(select snum from orders where amt>300); 
+
+ 
+
+5 rows updated. 
+
+ 
+
+SQL> select * 
+
+from salespeople; 
+
+ 
+
+ SNUM SNAME CITY COMM 
+
+---------- ---------- ---------- ---------- 
+
+ 1001 Peel London .14 
+
+ 1002 Serres San Jose .16 
+
+ 1004 Motika London .13 
+
+ 1007 Rifkin Barcelona .18 
+
+ 1003 Axelrod Newyork .12 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment – 16 
+
+Creating Tables and Indexes. 
+
+ 
+
+1) Write a command that will enable a user to pull orders grouped by date out of the 
+Orders table quickly. 
+
+
+ 
+
+SQL> create index d_order 
+
+ on orders(odate); 
+
+ 
+
+Index created. 
+
+ 
+
+2) If the Orders table has already been created, how can you force the onum field to 
+be unique (assume all current values are unique)? 
+
+
+ 
+
+SQL> describe orders; 
+
+ 
+
+ Name Null? Type 
+
+ ----------------------------------------- -------- ---------------------------- 
+
+ 
+
+ ONUM NUMBER(4) 
+
+ AMT NUMBER(7,2) 
+
+ ODATE DATE 
+
+ CNUM NUMBER(4) 
+
+ SNUM NUMBER(4) 
+
+ 
+
+SQL> alter table orders 
+
+modify onum constraint o_pk primary key; 
+
+ 
+
+Table altered. 
+
+ 
+
+SQL> describe orders; 
+
+ Name Null? Type 
+
+ ----------------------------------------- -------- ---------------------------- 
+
+ 
+
+ ONUM NOT NULL NUMBER(4) 
+
+ AMT NUMBER(7,2) 
+
+ ODATE DATE 
+
+ CNUM NUMBER(4) 
+
+ SNUM NUMBER(4) 
+
+ 
+
+3) Create an index that would permit each salesperson to retrieve his or her orders 
+grouped by date quickly. 
+
+
+ 
+
+SQL> create index I_DATE on orders(odate); 
+
+ 
+
+
+4) Let us suppose that each salesperson is to have only one customer of a given 
+rating, and that this is currently the case. Enter a command that enforces it. 
+
+
+ 
+
+ 
+
+SQL> alter table customers 
+
+ modify 
+
+rating primary key; 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment – 17 
+
+Constraining the Values of your data. 
+
+ 
+
+1) Create the Orders table so that all onum values as well as all combinations of 
+cnum and snum are different from one another, and so that NULL values are 
+excluded from the date field. 
+
+
+ composit key: 
+
+ 
+
+SQL> create table orders1 
+
+ ( 
+
+ onum number(4), 
+
+ cnum number(4), 
+
+ sname number(4), 
+
+ odate date not null, 
+
+ constraint p_k_1 primary key(onum,cnum,sname) 
+
+ ); 
+
+ 
+
+Table created. 
+
+ 
+
+2) Create the Salespeople table so that the default commission is 10% with no 
+NULLS permitted, snum is the primary key, and all names fall alphabetically 
+between A and M, inclusive (assume all names will be uppercase). 
+
+
+ 
+
+SQL> create table salespeople1 
+
+ ( 
+
+ comm number(3) default 10, 
+
+ snum number(4) primary key, 
+
+ sname varchar2(10) check( substr(upper(sname),1,1) between 'A' and 'B') 
+
+ ); 
+
+ 
+
+Table created. 
+
+ 
+
+SQL> insert into salespeople1 
+
+values (20,1212,'www'); 
+
+ 
+
+SQL> insert into salespeople1 
+
+values (20,1212,'www') 
+
+ 
+
+3) Create the Orders table, making sure that the onum is greater than the cnum, and 
+the cnum is greater that the snum. Allow no NULLS in any of these three fields. 
+
+
+ 
+
+SQL> create table orders12 
+
+ ( 
+
+ onum number(4), 
+
+ amt number(7,2), 
+
+ odate date, 
+
+
+ cnum number(4), 
+
+ snum number(4), 
+
+ constraint on_cn_sn check(cnum>cnum and cnum>snum) 
+
+ ); 
+
+ 
+
+Table created. 
+
+ 
+
+SQL> insert into orders12 
+
+values(10,10,'12-jan-1990',10,10); 
+
+SQL> insert into orders12 
+
+values(10,10,'12-jan-1990',10,10) 
+
+* 
+
+ERROR at line 1: 
+
+ORA-02290: check constraint (ORAD178.ON_CN_SN) violated 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment – 18 
+
+Maintaining the Integrity of your Data. 
+
+ 
+
+1) Create a table called Cityorders. This will contain the same onum, amt and snum 
+fields as the Orders table, and the same cnum and city fields as the Customers 
+table, so that each customer’s order will be entered into this table along with his 
+or her city. Onum will be the primary key of Cityorders. All of the fields in 
+Cityorders will be constrained to match the Customers and Orders tables. Assume 
+the parent keys in these tables already have the proper constraints. 
+
+
+ 
+
+SQL> Create table cityorders 
+
+Select onum,amt,snum,cunu,city 
+
+from orders 
+
+natural join customers; 
+
+ 
+
+SQL> alter table cityorders 
+
+add constraint onum_fk foreign key(onum) references orders(onum); 
+
+ 
+
+SQL> desc cityorders; 
+
+ 
+
+ Name Null? Type 
+
+ ----------------------------------------- -------- ---------------------------- 
+
+ 
+
+ ONUM NOT NULL NUMBER(4) 
+
+ AMT NUMBER(7,2) 
+
+ SNUM NUMBER(4) 
+
+ CNUM NUMBER(4) 
+
+ CITY VARCHAR2(10) 
+
+ 
+
+ 
+
+2) Redefine the Orders table as follows:- add a new column called prev, 
+
+
+ 
+
+which will identify, for each order, the onum of the previous order for that current 
+customer. 
+
+Implement this with a foreign key referring to the Orders table itself. 
+
+The foreign key should refer as well to the cnum of the customer, 
+
+providing a definite enforced link between the current order and the one 
+referenced. 
+
+ 
+
+SQL> alter table cityorders 
+
+ add foreign key(cnum) references customers(cnum); 
+
+ 
+
+ Table altered. 
+
+SQL> alter table copy_orders 
+
+ add foreign key(prev) references copy_orders(onum); 
+
+ Table altered. 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Remember : 
+
+ 
+
+use add constraint instead of modify 
+
+ 
+
+To rename a table name: Rename <old_table> to <new_table_name> 
+
+ 
+
+To rename a column name: alter table cityorders rename column onum to nonum; 
+
+ 
+
+When join two table using natural join you can’t use alias in the where condithon. 
+
+ 
+
+Aggregate function generally allowed in where clause it can be used with having in. 
+
+To find out how many constraints are available you can check the user_constraint 
+dictionary by following query 
+
+SQL> select constraint_name from user_constraints; 
+
+ 
+
+To delete a constraint you cannot delete from the user_dictionary you have to write 
+
+Sql>alter table <table_name> drop constraint <constraint_name> 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment – 19 
+
+Views. 
+
+ 
+
+1) Create a view that shows all of the customers who have the highest ratings. 
+
+
+ 
+
+SQL> create view h_rated_cust 
+
+as 
+
+select * 
+
+from customers 
+
+where rating=(select max(rating) from customers); 
+
+ 
+
+View created. 
+
+ 
+
+SQL> select * 
+
+from h_rated_cust; 
+
+ 
+
+ CNUM CNAME CITY RATING SNUM 
+
+---------- ---------- ---------- ---------- ---------- 
+
+ 2004 Grass Berliln 300 1002 
+
+ 2008 Cisneros San Jose 300 1007 
+
+ 
+
+2) Create a view that shows the number of salespeople in each city. 
+
+
+ 
+
+SQL> create view tns_city 
+
+as 
+
+select city,count(city) "NO. OF SALES PEOPLE" 
+
+from salespeople group by city; 
+
+ 
+
+View created. 
+
+ 
+
+SQL> select * from tns_city; 
+
+ 
+
+CITY NO. OF SALES PEOPLE 
+
+---------- ------------------- 
+
+LONDON 2 
+
+BARCELONA 1 
+
+SAN JOSE 1 
+
+SAN JOSE 1 
+
+NEWYORK 1 
+
+ 
+
+3) Create a view that shows the average and total orders for each salesperson after 
+his or her name. Assume all names are unique. 
+
+
+ 
+
+SQL> create view AV_TOT_SAL 
+
+as 
+
+
+select sname,avg(onum) AVERAGE ,count(onum) "TOTAL ORDERS" 
+from salespeople 
+
+join orders using(snum) group by sname; 
+
+ 
+
+View created. 
+
+ 
+
+SQL> SELECT * FROM AV_TOT_SAL; 
+
+ 
+
+SNAME AVERAGE TOTAL ORDERS 
+
+---------- ---------- ------------ 
+
+Motika 3002 1 
+
+Axelrod 3009 1 
+
+Peel 3007.33333 3 
+
+Serres 3007.33333 3 
+
+Rifkin 3003.5 2 
+
+ 
+
+4) Create a view that shows each salesperson with multiple customers. 
+
+
+ 
+
+SQL> create view m_c 
+
+as 
+
+select sname,cname 
+
+from salespeople join customers using (snum); 
+
+ 
+
+View created. 
+
+ 
+
+SQL> SELECT * FROM M_C; 
+
+ 
+
+SNAME CNAME 
+
+---------- ---------- 
+
+Peel Hoffman 
+
+Axelrod Giovanni 
+
+Serres Grass 
+
+Peel Clemens 
+
+Rifkin Cisneros 
+
+Serres Pereira 
+
+Serres Liu 
+
+ 
+
+7 rows selected. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+HIERARCHICAL QUERY SOLUTION:- 
+
+SELECT deptno , 
+
+LTRIM(MAX( SYS_CONNECT_BY_PATH ( ename, ',')),',') EMP_STRING 
+
+FROM 
+
+ (SELECT empno , ename, deptno, 
+
+ row_number() OVER ( PARTITION BY deptno ORDER BY rownum) rn 
+
+ FROM EMP ) 
+
+ CONNECT BY deptno = PRIOR deptno 
+
+ AND rn = PRIOR rn+1 
+
+ START WITH rn =1 
+
+ GROUP BY deptno 
+
+ ORDER BY deptno; 
+
+1. DEPTNO EMP_STRING 
+2. ---------- ------------------------------------------------------------ 
+3. 10 CLARK,KING,MILLER 
+4. 20 SMITH,JONES,SCOTT,ADAMS,FORD 
+5. 30 ALLEN,WARD,MARTIN,BLAKE,TURNER,JAMES 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment – 20 
+
+Changing Values through Views. 
+
+ 
+
+1) Which of these views are updateable (will allow DML operations)? 
+
+
+ 
+
+#1 Create View Dailyorders 
+
+ as Select Distinct cnum, snum, onum, odate from Orders; 
+
++ 
+
+ans: yes 
+
+ 
+
+#2 Create View Custotals 
+
+ as Select cname, Sum (amt) Sum_Amt from Orders, Customers 
+
+where Orders.cnum=Customers.cnum 
+
+Group by cname; 
+
+ Ans: 
+
+ Views are note updatable which consists of join. 
+
+ 
+
+#3 Create view Thirdorders 
+
+ as Select * from Dailyorders 
+
+where odate=’03-OCT-1990’; 
+
+ 
+
+ ans: 
+
+ not updatable due to distinct keyword in dailyorders; 
+
+ 
+
+#4 Create view Nullcities 
+
+ as Select snum, sname, city 
+
+from Salespeople 
+
+where city is NULL 
+
+OR sname BETWEEN ‘A’ and ‘M’; 
+
+ 
+
+ans: yes 
+
+ 
+
+2) Create a view of the Salespeople table called Commissions. This view will 
+include only the snum and comm fields. Through this view, someone could enter 
+or change commissions, but only to values between .10 and .20. 
+
+
+SQL> create view commission 
+
+ as 
+
+ select snum,comm 
+
+from salespeople 
+
+where comm between .10 and .20; 
+
+ 
+
+ 
+
+ 
+
+
+ 
+
+SQL> select * 
+
+from commission; 
+
+ SNUM COMM 
+
+---------- ---------- 
+
+ 1001 .12 
+
+ 1002 .13 
+
+ 1004 .11 
+
+ 1007 .15 
+
+ 1003 .1 
+
+SQL> insert into commission 
+
+values(3000,.4); 
+
+1 row created. 
+
+SQL> select * 
+
+from commission; 
+
+ SNUM COMM 
+
+---------- ---------- 
+
+ 1001 .12 
+
+ 1002 .13 
+
+ 1004 .11 
+
+ 1007 .15 
+
+ 1003 .1 
+
+SQL> select * 
+
+from salespeople; 
+
+ 
+
+ SNUM SNAME CITY COMM 
+
+---------- ---------- ---------- ---------- 
+
+ 3000 .4 
+
+ 1001 peel london .12 
+
+ 1002 serres san jose .13 
+
+ 1004 Motika london .11 
+
+ 1007 rifkin barcelona .15 
+
+ 1003 axelrod newyork .1 
+
+
+ 
+
+3) Some SQL implementations have a built-in constant representing the current date, 
+sometimes called “CURDATE” or “SYSDATE”. The word CURDATE can 
+therefore be used in a SQL statement, and be replaced by the current date when 
+the value is accessed by commands such as Select or Insert. We will use a view of 
+the Orders table called Entryorders to insert rows into the Orders table. Create the 
+Orders table, so that CURDATE is automatically inserted for odate if no value is 
+given. Then create the Entryorders view so that no values can be given. 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+Note: 
+
+Suppose if you have a view named view1 on table t 
+
+And if you apply another view on this view named view2 
+
+And now if you make update on view 2 then it will be made on the table t; 
+
+ 
+
+But remember if you have used distinct keyword in base view then the identifier in view2 
+will be virtual view and they will not allow to update. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment - 21 
+
+Grant and Revoke. 
+
+ 
+
+1) Give Amit the right to change the ratings of the customers. 
+
+
+ 
+
+SQL> grant update on customers to Amit ; 
+
+ 
+
+Grant succeeded 
+
+ 
+
+SQL> revoke update on customers from Amit ; 
+
+ 
+
+Revoke succeeded. 
+
+ 
+
+ 
+
+2) Give Manoj the right to give other users the right to query the Orders table. 
+
+
+ 
+
+ 
+
+SQL> grant select on orders to Manoj with grant option; 
+
+ 
+
+Grant succeeded. 
+
+ 
+
+ 
+
+SQL> grant select on Manoj.orders to Seema; 
+
+ 
+
+Grant succeeded. 
+
+ 
+
+ 
+
+SQL> grant update on Manoj.orders to Seema; 
+
+ 
+
+insufficient privileges 
+
+ 
+
+ 
+
+3) Take the INSERT privilege on Salespeople away from Ajita. 
+
+
+ 
+
+SQL> revoke insert on salespeople from Ajita; 
+
+ 
+
+4) Grant Abhijeet the right to insert or update the Customers table while keeping her 
+possible rating values in the range of 100 to 500. 
+
+
+ 
+
+SQL> create or replace view range100 
+
+as 
+
+select * 
+
+from customers 
+
+where rating between 100 and 500 
+
+with check option; 
+
+View created. 
+
+
+ 
+
+SQL> grant update on range100 to Ajita; 
+
+ 
+
+ 
+
+SQL> insert into range100 
+
+ values(3000,'rakesh','bikaner',700,7888); 
+
+ 
+
+SQL> insert into range100 
+
+ values(3000,'rakesh','bikaner',700,7888) 
+
+ * 
+
+ERROR at line 1: 
+
+ORA-01402: view WITH CHECK OPTION where-clause violation 
+
+ 
+
+5) Allow Vikram to query the Customers table, but restrict his access to those 
+customers whose rating is the lowest. 
+
+
+ 
+
+ 
+
+SQL> create or replace view restrictmin 
+
+ as 
+
+ select * 
+
+ from customers 
+
+ where rating not in (select min(rating) from customers); 
+
+ 
+
+View created. 
+
+ 
+
+SQL> grant select on restrictmin to Vikaram; 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment –22 
+
+Global Aspects of SQL. 
+
+ 
+
+1) Create a database space (tablespace) called “Myspace” and make it the default 
+tablespace for Parag’s tables. 
+
+
+ 
+
+SQL> create tablespace Myspace 
+
+ datafile 'd:mytablespace' 
+
+ autoextend off; 
+
+ 
+
+SQL>create user Parag 
+
+ idntied by pass 
+
+ default tablespace Myspace; 
+
+ 
+
+2) You have been granted SELECT on Ajita’s Orders table. Enter a command so that 
+you will be able to refer to this table as “Orders” without using the name “Ajita” 
+as a prefix. 
+
+
+SQL> Create database link eu_db 
+
+Connect to Ajita 
+
+Identified by rksuthar 
+
+Using 'orcl'; 
+
+ 
+
+3) If there is a power failure, what will happen to all changes contained in the current 
+transaction? 
+
+
+ 
+
+If transaction is not commited or completed it will be rollbacked to previous 
+savepoint. 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+Assignment –23 
+
+Keeping your Database in order. 
+
+ 
+
+1) Query the catalog to produce, for each table with more than 4 columns, the table’s 
+name, the owner, and the names and datatypes of the columns. 
+
+
+ 
+
+2) Query the catalog to find out how many synonyms exist for each table in the 
+database. Remember that the same synonym owned by 2 different users are in 
+effect 2 different synonyms. 
+
+
+ 
+
+3) Find out how many tables have indexes on more than 50% of their columns. 
+
+
+ 
+
+
