@@ -5,11 +5,11 @@
 
 #Assignment –1 
 
-Creating sample tables and inserting values. 
+##Creating sample tables and inserting values. 
 
  
 
-##Create the following tables with the given structures and insert sample data as specified: - 
+Create the following tables with the given structures and insert sample data as specified: - 
  
 A) SALESPEOPLE 
 
@@ -290,7 +290,7 @@ Ans :- insert into values
 
 #Assignment –4 
 
-Retrieving Information from Tables. 
+##Retrieving Information from Tables. 
 
  
 
@@ -654,7 +654,7 @@ SNUM 	 	SNAME 	 		CITY 	 		COMM
 
 #Assignment –6 
 
-Using Special Operators in Conditions. 
+##Using Special Operators in Conditions. 
 
  
 
@@ -891,7 +891,7 @@ ONUM 	 		AMT 	 		ODATE 	 			CNUM 	 		SNUM
 
 #Assignment –7 
 
-Summarizing Data with Aggregate Functions. 
+##Summarizing Data with Aggregate Functions. 
 
  
 
@@ -1047,7 +1047,7 @@ TOTAL 	 									ODATE
 
 #Assignment –8 
 
-Formatting Query output. 
+##Formatting Query output. 
 
  
 
@@ -1200,7 +1200,7 @@ TOTAL 	 ORDERS ODATE
 
 #Assignment – 9 
 
-Querying Multiple Tables at Once. 
+##Querying Multiple Tables at Once. 
 
  
 
@@ -1400,7 +1400,7 @@ AMT 	 		COMM
 
 #Assignment – 10 
 
-Joining a Table to Itself. 
+##Joining a Table to Itself. 
 
  
 
@@ -1447,7 +1447,7 @@ pereira 	 	rome
 
 #Assignment – 11 
 
-Subqueries. 
+##SubQueries. 
 
  
 
@@ -1524,7 +1524,7 @@ SUM(AMT)
 
 #Assignment – 12 
 
-Using the operators ANY, ALL and SOME. 
+##Using the operators ANY, ALL and SOME. 
 
  
 
@@ -1685,7 +1685,7 @@ ONUM 	 	AMT 	 		ODATE 	 		CNUM 	 	SNUM
 
 #Assignment – 13 
 
-Using the UNION clause. 
+##Using the UNION clause. 
 
  
 
@@ -1803,7 +1803,7 @@ SNUM
 
 #Assignment – 14 
 
-Entering, Deleting, and Changing Field Values. 
+##Inserting, Deleting, and Changing Field Values. 
 
  
 
@@ -2080,7 +2080,7 @@ where snum =(select snum from salespeople where sname='Motika');
 
 #Assignment – 15 
 
-Using Subqueries with DML Commands. 
+##Using Subqueries with DML Commands. 
 
  
 
@@ -2209,7 +2209,7 @@ SNUM 	 	SNAME 	 		CITY 	 		COMM
 
 #Assignment – 16 
 
-Creating Tables and Indexes. 
+##Creating Tables and Indexes. 
 
  
 
@@ -2313,7 +2313,7 @@ rating primary key;
 
 #Assignment – 17 
 
-Constraining the Values of your data. 
+##Constraining the Values of your data. 
 
  
 
@@ -2435,7 +2435,7 @@ ORA-02290: check constraint (ORAD178.ON_CN_SN) violated
 
 #Assignment – 18 
 
-Maintaining the Integrity of your Data. 
+##Maintaining the Integrity of your Data. 
 
  
 
@@ -2558,7 +2558,7 @@ Sql>alter table <table_name> drop constraint <constraint_name>
 
 #Assignment – 19 
 
-Views. 
+##Views. 
 
  
 
@@ -2765,7 +2765,7 @@ DEPTNO 	 	EMP_STRING
 
 #Assignment – 20 
 
-Changing Values through Views. 
+##Changing Values through Views. 
 
  
 
@@ -2942,7 +2942,7 @@ will be virtual view and they will not allow to update.
 
 #Assignment - 21 
 
-Grant and Revoke. 
+##Grant and Revoke. 
 
  
 
@@ -3056,7 +3056,7 @@ SQL> grant select on restrictmin to Vikaram;
 
 #Assignment –22 
 
-Global Aspects of SQL. 
+##Global Aspects of SQL. 
 
  
 
@@ -3108,7 +3108,7 @@ savepoint.
 
 #Assignment –23 
 
-Keeping your Database in order. 
+##Keeping your Database in order. 
 
  
 

@@ -2398,7 +2398,7 @@ end;
  
 
 
-PL* SQL 
+PL*SQL 
 
 #Exercise 8 
 
