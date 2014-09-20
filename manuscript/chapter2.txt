@@ -1983,7 +1983,7 @@ and Seventy five paise only.
 
 PL*SQL 
 
- #Exercise 7 
+#Exercise 7 
 
  
 
@@ -2221,8 +2221,7 @@ new 4: c number:=5;
 achieve this. Display the results on the screen using dbms_output.put_line. 
 
 
-----------------------------------------------------------------RANDOM METHOD-----------------------------------
--------------- 
+-------RANDOM METHOD--------
 
 declare 
 
@@ -2238,8 +2237,7 @@ end;
 
 / 
 
-----------------------------------------------------------------CREATING-RANDOM -NO--------------------------
-------------------- 
+--------CREATING-RANDOM -NO--------
 
 declare 
 
@@ -2264,8 +2262,7 @@ end;
 
 / 
 
-----------------------------------------------------------------CALLING-CODE---------------------------------------
----------- 
+------------CALLING-CODE------
 
 declare 
 
