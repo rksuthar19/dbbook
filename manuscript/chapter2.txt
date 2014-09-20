@@ -1,18 +1,14 @@
 # Chapter 2
 
-
 ---------PL*SQL Assignments--------
 
-Exercise 1 
+#Exercise 1 
 
- 
 
 1. Write a program that computes the perimeter and the area of a rectangle. Define your own values for the 
 length and width. (Assuming that L and W are the length and width of the rectangle, Perimeter = 
 2*(L+W) and Area = L*W. Display the output on the screen using dbms_output.put_line. 
 
-
- 
 
 Declare 
 
@@ -90,12 +86,11 @@ SQL> select * from tempp;
 
  
 
- ITEM SQUARE CUBE 
+ITEM		SQUARE		CUBE
 
----------- ---------- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-
- 5 25 125 
+5			25			125 
 
  
 
@@ -191,7 +186,7 @@ dbms_output.put_line('not divisible by 5');
 
 end if; 
 
-
+
 end; 
 
 / 
@@ -236,72 +231,11 @@ end;
 
 / 
 
- 
 
  
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 PL*SQL 
 
-Exercise 2 
+#Exercise 2 
 
  
 
@@ -385,7 +319,7 @@ begin
 
  dbms_output.put_line('*****************************************************'); 
 
-
+
  dbms_output.put_line('*****************************************************'); 
 
  dbms_output.put_line('* Name:- '||temp3.name||' ** Name:- '||temp4.name||' *'); 
@@ -404,104 +338,12 @@ begin
 
 / 
 
- 
 
- 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 PL*SQL 
 
-Exercise 3 
+#Exercise 3 
 
  
 
@@ -587,7 +429,7 @@ end;
 
 3. Check if a given a year is a leap year. The condition is:- 
 
-
+
 year should be (divisible by 4 and not divisible by 100) or (divisible by 4 and divisible by 400.) Display the 
 output on the screen using dbms_output.put_line. The year should be input by the user. 
 
@@ -685,7 +527,7 @@ begin
 
  user:='child'; 
 
-
+
  elsif (age>18) and (age<21) then 
 
  user:='major'; 
@@ -771,7 +613,7 @@ begin
 
  elsif score<=94 then 
 
-
+
  grade:='B'; 
 
  elsif score<=100 then 
@@ -863,7 +705,7 @@ begin
 
  end if; 
 
-
+
  elsif code=3 then 
 
  prod:='Computers'; 
@@ -894,78 +736,14 @@ begin
 
 end; 
 
-/ 
-
+/  
  
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 PL*SQL 
 
-Exercise 4 
+#Exercise 4 
 
  
 
@@ -1024,7 +802,7 @@ begin
 
  x:=mod(i,10); 
 
-
+
  y:=mod(i,10); 
 
  z:=mod(i,10); 
@@ -1088,7 +866,7 @@ screen using dbms_output.put_line.
 
  dbms_output.put_line(j); 
 
-
+
  dbms_output.put_line('____'); 
 
  end if; 
@@ -1184,7 +962,7 @@ characters are read in.
 
  counter int:=length(str); 
 
-
+
 begin 
 
  dbms_output.put_line(counter); 
@@ -1259,16 +1037,9 @@ end;/
 
  
 
- 
-
- 
-
- 
-
-
 PL*SQL 
 
-Exercise 5 
+#Exercise 5 
 
  
 
@@ -1356,7 +1127,7 @@ Percentage Grade
 
 60 – 79.99% A 
 
-
+
 >= 80% HONOURS 
 
 ------------------------------------------------------tables----------------------------------------------------------
@@ -1451,7 +1222,7 @@ Grade Varchar2 (10)
 -----------------------------------------------anonyms procedure for Dev_2000_result result-----------
 declare 
 
-
+
 v_student school%rowtype; 
 
 v_result oracle_result%rowtype; 
@@ -1548,7 +1319,7 @@ elsif v_student.class='Student' then
 
  grade:='HONOURS'; 
 
-
+
  elsif v_student.Oracle>=60 then 
 
  grade:='A'; 
@@ -1645,16 +1416,16 @@ create table CUSTOMER
 
 //insert dummy data into table customer 
 
-
-Mete M Previous Reading Current Reading C L 
 
----- - ---------------- --------------- - - 
+Mete M 			Previous Reading 		Current 			Reading 	C 		L 
 
-1000 S 3000 5000 A Y 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-1001 T 3000 5000 R Y 
+1000 			S 						3000 				5000 		A 		Y 
 
-1002 S 4000 2000 R Y 
+1001 			T 						3000 				5000 		R 		Y 
+
+1002 			S 						4000 				2000 		R 		Y 
 
  
 
@@ -1740,7 +1511,7 @@ end;
 
 -----------------------------------------------output------------------------------------------------------------- 
 
-
+
 Compile: 
 
  
@@ -1802,15 +1573,15 @@ create table corder
 
 Insert dummy data:- 
 
-Invo Invoice D Customer Code Product Code Quantity Sold 
+Invo 			Invoice				 Customer Code 		Product Code 		Quantity Sold 
 
----- --------- -------------- ------------- -------------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-rj24 31-MAR-12 2 0 3 
+rj24 			31-MAR-12 			2 					0 					3 
 
-rj24 31-MAR-12 2 1 3 
+rj24 			31-MAR-12 			2 					1 					3 
 
-rj24 31-MAR-12 2 2 3 
+rj24 			31-MAR-12 			2 					2 					3 
 
 ------------------------------------------------------------------------------------------------------------------------ 
 
@@ -1839,7 +1610,7 @@ create table totalsale
 -----------------------------------------------procedure-----------------------------------------------------------------
 create or replace procedure find_sale_purchase 
 
-
+
 as 
 
  cursor c1 is select distinct("Customer Code ") from corder; 
@@ -1925,39 +1696,30 @@ SQL>exec find_sale_purchase;
 
 SQL> select * from totalsale; 
 
-Product Code Total Sale 
+Product 			Code Total Sale 
 
-------------- ----------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 1 105 
+1 					105 
 
- 2 231 
+2 					231 
 
- 0 276 
+0				 	276 
 
  
 
-
+
 SQL> select * from totalpurchase; 
 
  
 
-Customer Code Total Purchase 
+Customer 			Code Total Purchase 
 
--------------- -------------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 2 276 
-
- 
+2 					276 
 
  
-
- 
-
- 
-
- 
-
  
 
 4. Create a table EMPLOYEE with the following columns:- 
@@ -2017,15 +1779,15 @@ Category Character (1),
 
 Insert dummy data:- 
 
- Empl Employee Name DESIGNATIO C Basic Salary 
+Empl 		Employee Name 		DESIGNATIO 		C 		Basic Salary 
 
- ---- ------------------------------ ---------- - ------------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 1000 rakesh Sr.off s 3000 
+1000 		rakesh 				Sr.off 			s 		3000 
 
- 1001 peeyoosh Sr.off s 4000 
+1001 		peeyoosh 			Sr.off 			s 		4000 
 
- 1002 malik Jr.off s 5000 
+1002 		malik 				Jr.off 			s 		5000 
 
 --------------------------------------------------------------------------------------------------------------------------- 
 
@@ -2035,7 +1797,7 @@ Insert dummy data:-
 
  ( 
 
-
+
  "Employee No " Varchar2 (4), 
 
  "Gross Salary " Number (4) 
@@ -2103,40 +1865,23 @@ create or replace procedure gross
 
 SQL>exec gross; 
 
-Empl Gross Salary 
+Empl Gross 			Salary 
 
----- ------------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-1000 4050 
+1000 				4050 
 
-1001 5400 
+1001 				5400 
 
-1002 6750 
-
- 
+1002 				6750 
 
  
-
  
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 PL*SQL 
 
-Exercise 6 
+#Exercise 6 
 
  
 
@@ -2220,7 +1965,7 @@ and Seventy five paise only.
 
  123451250.75 
 
-
+
  
 
  If the user enters:- 
@@ -2229,82 +1974,16 @@ and Seventy five paise only.
 
  The output of your program should be:- 
 
- 9728 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
+ 9728  
 \ 
 
- 
 
- 
 
- 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 PL*SQL 
 
- Exercise 7 
+ #Exercise 7 
 
  
 
@@ -2392,7 +2071,7 @@ when others then
 
 dbms_output.put_line('un identified error occured'); 
 
-
+
 END; 
 
 / 
@@ -2485,7 +2164,7 @@ dbms_output.put_line('xxxxxx- invalid triangle -xxxxxxxxxx');
 
 return false; 
 
-
+
 when others then 
 
 dbms_output.put_line('un identified error occured'); 
@@ -2582,7 +2261,7 @@ dbms_output.put_line(seed);
 
 end; 
 
-
+
 / 
 
 ----------------------------------------------------------------CALLING-CODE---------------------------------------
@@ -2676,7 +2355,7 @@ create or replace function revstr(st in out varchar2)
 
  for j in 1..len 
 
-
+
  loop 
 
  st:=st||substr(st,len-j,1); 
@@ -2721,44 +2400,10 @@ end;
 
  
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
-
 PL* SQL 
 
-Exercise 8 
+#Exercise 8 
 
  
 
@@ -2843,7 +2488,7 @@ screen using dbms_output.put_line.
 
  y number; 
 
-
+
  begin 
 
  d:=sysdate-dat; 
@@ -2919,24 +2564,15 @@ print the Pay slips for all the employees. The format of the Pay slip should be 
 
  Sal:- xxx DA:- xxx HRA:- xxx Gross:- xxx Tax:- xxx Net:- xxx 
 
- ****************************************************************** 
-
+ ******************************************************************  
  
 
  
 
- 
 
- 
-
- 
-
- 
-
-
 PL*SQL 
 
-Exercise 9 
+#Exercise 9 
 
  
 
@@ -2944,36 +2580,41 @@ Create the following 3 tables and insert sample data as shown:-
 
  Ord_mst 
 
- Ord_no Cust_cd Status 
+Ord_no 			Cust_cd 		Status 
 
- 1 C1 P 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 
-
- 
-
- Ord_dtl 
-
- Ord_no Prod_cd Qty 
-
- 1 P1 100 
-
- 1 P2 200 
+1 				C1 				P 
 
  
 
  
 
- Prod_mst 
+Ord_dtl 
 
- Prod_cd Prod_name Qty_in_stock Booked_qty 
+Ord_no 			Prod_cd 		Qty 
+ 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- P1 Floppies 10000 
-1000 
+1 				P1 				100 
 
- P2 Printers 5000 600 
+1 				P2 				200 
 
- P3 Modems 3000 200 
+ 
+
+ 
+
+Prod_mst 
+
+Prod_cd 		Prod_name 			Qty_in_stock 			Booked_qty 
+
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+P1 				Floppies 			10000 					1000 
+
+P2 				Printers 			5000 					600 
+
+P3 				Modems 				3000 					200 
 
  
 
@@ -3023,7 +2664,7 @@ should be increased accordingly.
 
  Booked_qty number 
 
-
+
  ) 
 
  / 
@@ -3056,29 +2697,29 @@ should be increased accordingly.
 
  
 
- ORD_NO PR QTY 
+ORD_NO 		PR 			QTY 
 
- ---------- -- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 1 P1 100 
+1 			P1 			100 
 
- 1 P2 200 
+1 			P2 			200 
 
- 1 P1 50 
+1 			P1 			50 
 
  SQL> select * from prod_mst; 
 
  
 
- PR PROD_NAME QTY_IN_STOCK BOOKED_QTY 
+PR 		PROD_NAME 			QTY_IN_STOCK 			BOOKED_QTY 
 
- -- -------------------- ------------ ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< 
 
- P1 Floppies 10000 1050 
+P1 		Floppies 			10000 					1050 
 
- P2 Printers 5000 600 
+P2 		Printers 			5000 					600 
 
- P3 Modems 3000 200 
+P3 		Modems 				3000 					200 
 
  
 
@@ -3106,15 +2747,15 @@ Prod_mst should be decreased accordingly.
 
  
 
- PR PROD_NAME QTY_IN_STOCK BOOKED_QTY 
+PR 				PROD_NAME 		QTY_IN_STOCK 	BOOKED_QTY 
 
- -- -------------------- ------------ ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- P1 Floppies 10000 1000 
+P1 				Floppies 		10000 			1000 
 
- P2 Printers 5000 600 
+P2 				Printers 		5000 			600 
 
- P3 Modems 3000 200 
+P3 				Modems 			3000 			200 
 
  
 
@@ -3122,7 +2763,7 @@ Prod_mst should be decreased accordingly.
 Booked_qty in Prod_mst should be increased/decreased accordingly. 
 
 
-
+
 ----------------------------------------------------TRIGGER--------------------------------------------------------------- 
 
 create trigger Prod_cd_3 before update on ord_dtl 
@@ -3143,13 +2784,13 @@ SQL> select * from ord_dtl;
 
  
 
-ORD_NO PR QTY 
+ORD_NO 			PR 				QTY 
 
----------- -- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-1 P1 100 
+1 				P1 				100 
 
-1 P2 200 
+1 				P2 				200 
 
  
 
@@ -3157,15 +2798,15 @@ SQL> select * from prod_mst;
 
  
 
-PR PROD_NAME QTY_IN_STOCK BOOKED_QTY 
+PR 			PROD_NAME 			QTY_IN_STOCK 		BOOKED_QTY 
 
--- -------------------- ------------ ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-P1 Floppies 10000 1000 
+P1 			Floppies 			10000 				1000 
 
-P2 Printers 5000 600 
+P2 			Printers 			5000 				600 
 
-P3 Modems 3000 200 
+P3 			Modems 				3000 				200 
 
  
 
@@ -3181,13 +2822,13 @@ SQL> select * from ord_dtl;
 
  
 
-ORD_NO PR QTY 
+ORD_NO 			PR 					QTY 
 
----------- -- ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-1 P1 300 
+1 				P1 					300 
 
-1 P2 200 
+1 				P2 					200 
 
  
 
@@ -3195,15 +2836,15 @@ SQL> select * from prod_mst;
 
  
 
-PR PROD_NAME QTY_IN_STOCK BOOKED_QTY 
+PR 			PROD_NAME 			QTY_IN_STOCK 			BOOKED_QTY 
 
--- -------------------- ------------ ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-P1 Floppies 10000 1200 
+P1 			Floppies 			10000 					1200 
 
-P2 Printers 5000 600 
+P2 			Printers 			5000 					600 
 
-P3 Modems 3000 200 
+P3 			Modems 				3000 					200 
 
  
 
@@ -3221,16 +2862,16 @@ SQL> select * from prod_mst;
 
  
 
-
-PR PROD_NAME QTY_IN_STOCK BOOKED_QTY 
 
--- -------------------- ------------ ---------- 
+PR 			PROD_NAME 			QTY_IN_STOCK 		BOOKED_QTY 
 
-P1 Floppies 10000 1200 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-P2 Printers 5000 600 
+P1 			Floppies 			10000 				1200 
 
-P3 Modems 3000 200 
+P2 			Printers 			5000 				600 
+
+P3 			Modems 				3000 				200 
 
  
 
@@ -3298,26 +2939,25 @@ SQL> select * from ord_mst;
 
  
 
- ORD_NO CU S 
+ORD_NO 		CU 		S 
 
----------- -- - 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
- 1 C1 P 
+1 			C1 		P 
 
  
 
 SQL> select * from prod_mst; 
 
-PR PROD_NAME QTY_IN_STOCK BOOKED_QTY 
+PR 		PROD_NAME 		QTY_IN_STOCK 		BOOKED_QTY 
 
--- -------------------- ------------ ---------- 
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-P1 Floppies 10000 1000 
+P1 		Floppies 		10000 				1000 
 
-P2 Printers 5000 600 
+P2 		Printers 		5000 				600 
 
-
-P3 Modems 3000 200 
+P3 		Modems 			3000 				200 
 
  
 
@@ -3334,7 +2974,3 @@ and if
 SQL> update ord_mst set status='d'; 
 
 updated as cancel in prod_mst 
-
- 
-
-
